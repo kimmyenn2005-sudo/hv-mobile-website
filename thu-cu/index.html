@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Thu mua iPhone cũ tại Quảng Ngãi, kiểm tra và định giá minh bạch. Có thể bán máy nhận tiền hoặc bù chênh lên đời iPhone tại HV Mobile." name="description"/>
+<title>Thu Mua iPhone Quảng Ngãi | Thu Cũ Đổi Mới - HV Mobile</title>
+<!-- HV Mobile Trade-in V2: Arial-only, hide unavailable capacities -->
+<style>
+/* =========================================================
+   HV MOBILE - BẢNG GIÁ THU CŨ
+   NGUYÊN TẮC: TOÀN BỘ CHỈ DÙNG FONT ARIAL
+========================================================= */
+*{
+  box-sizing:border-box;
+  font-family:Arial, sans-serif !important;
+}
+html{
+  scroll-behavior:smooth;
+}
+html,body{
+  margin:0;
+  padding:0;
+  background:#ffffff;
+  color:#191919;
+  font-family:Arial, sans-serif !important;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+a{
+  color:inherit;
+}
+
+/* =========================================================
+   KHUNG BẢNG GIÁ
+========================================================= */
+.hv-tradein-app{
+  width:min(1680px, calc(100vw - 36px));
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  margin:20px 0 0;
+  padding:42px 34px 56px;
+  background:#f7f7fa;
+  border-radius:28px;
+}
+
+/* =========================================================
+   TIÊU ĐỀ
+========================================================= */
+.hv-tradein-intro{
+  text-align:center;
+  max-width:980px;
+  margin:0 auto 28px;
+}
+.hv-tradein-intro h1{
+  margin:0 0 9px;
+  color:#151c2f;
+  font-size:clamp(33px,3.1vw,54px);
+  line-height:1.08;
+  font-weight:700;
+  letter-spacing:-1.2px;
+}
+.hv-tradein-intro p{
+  margin:0;
+  color:#667085;
+  font-size:18px;
+  line-height:1.5;
+  font-weight:400;
+}
+.hv-tradein-intro strong{
+  color:#986d00;
+}
+
+/* =========================================================
+   3 Ô ĐIỀU KIỆN
+========================================================= */
+.hv-condition-grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+  margin:0 auto 30px;
+}
+.hv-condition-card{
+  min-width:0;
+  min-height:104px;
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:21px 23px;
+  background:#fffaf0;
+  border:1.5px solid #dfbd54;
+  border-radius:19px;
+  box-shadow:0 7px 20px rgba(117,86,0,.055);
+}
+.hv-condition-icon{
+  flex:0 0 38px;
+  width:38px;
+  height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:linear-gradient(135deg,#765400,#d3aa2e);
+  color:#fff;
+  font-size:18px;
+  font-weight:700;
+}
+.hv-condition-card strong{
+  display:block;
+  margin:1px 0 5px;
+  color:#986d00;
+  font-size:17px;
+  line-height:1.25;
+  font-weight:700;
+}
+.hv-condition-card p{
+  margin:0;
+  color:#292929;
+  font-size:15px;
+  line-height:1.55;
+  font-weight:400;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+/* =========================================================
+   SEARCH
+========================================================= */
+.hv-search-wrap{
+  position:relative;
+  width:min(900px,100%);
+  margin:0 auto 38px;
+}
+.hv-search-wrap input{
+  display:block;
+  width:100%;
+  height:60px;
+  padding:0 25px 0 58px;
+  border:1.5px solid #ddbe5b;
+  border-radius:999px;
+  outline:none;
+  background:#fffdf7;
+  color:#272727;
+  font-size:17px;
+  font-weight:400;
+  box-shadow:0 5px 16px rgba(0,0,0,.025);
+  transition:.2s ease;
+}
+.hv-search-wrap input::placeholder{
+  color:#959cab;
+}
+.hv-search-wrap input:focus{
+  border-color:#b88700;
+  box-shadow:0 0 0 4px rgba(184,135,0,.09);
+}
+.hv-search-icon{
+  position:absolute;
+  left:21px;
+  top:50%;
+  transform:translateY(-52%);
+  color:#9b7a1a;
+  font-size:28px;
+  pointer-events:none;
+}
+
+/* =========================================================
+   GRID CARD BẢNG GIÁ - GIỐNG PHONG CÁCH BẢNG GIÁ IPHONE
+========================================================= */
+.hv-price-grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:30px;
+  align-items:start;
+}
+.hv-phone-card{
+  width:100%;
+  min-width:0;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid #e6d49b;
+  border-radius:22px;
+  box-shadow:0 9px 25px rgba(38,31,7,.07);
+}
+.hv-phone-title{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:16px 22px;
+  background:linear-gradient(105deg,#765400 0%,#b88700 30%,#d3aa2e 67%,#ebd06c 100%);
+}
+.hv-phone-title h2{
+  margin:0;
+  color:#fff;
+  font-size:22px;
+  line-height:1.2;
+  font-weight:700;
+  letter-spacing:-.25px;
+}
+.hv-phone-title span{
+  flex:0 0 auto;
+  padding:7px 10px;
+  border:1px solid rgba(255,255,255,.45);
+  border-radius:999px;
+  background:rgba(255,255,255,.14);
+  color:#fff;
+  font-size:11px;
+  line-height:1;
+  font-weight:700;
+}
+.hv-card-table{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+  font-variant-numeric:tabular-nums;
+}
+.hv-card-table th,
+.hv-card-table td{
+  vertical-align:middle;
+  text-align:center;
+  border-right:1px solid #e6dbb7;
+  border-bottom:1px solid #e6dbb7;
+}
+.hv-card-table th:last-child,
+.hv-card-table td:last-child{
+  border-right:none;
+}
+.hv-card-table tr:last-child td{
+  border-bottom:none;
+}
+.hv-card-table thead th{
+  padding:14px 7px;
+  background:#faf5e4;
+  color:#805f00;
+  font-size:13px;
+  line-height:1.3;
+  font-weight:700;
+}
+.hv-card-table thead th:first-child{
+  width:38%;
+}
+.hv-card-table tbody td{
+  height:57px;
+  padding:13px 7px;
+  background:#fff;
+  color:#222;
+  font-size:15px;
+  line-height:1.2;
+}
+.hv-storage{
+  font-weight:700;
+  white-space:nowrap;
+}
+.hv-price-number{
+  display:block;
+  width:100%;
+  color:#d63b54;
+  font-size:16px;
+  line-height:1.1;
+  font-weight:700;
+  letter-spacing:-.25px;
+  white-space:nowrap;
+}
+.hv-price-empty{
+  color:#a2a6ae;
+  font-size:15px;
+  font-weight:700;
+}
+.hv-no-result{
+  display:none;
+  width:100%;
+  padding:32px;
+  text-align:center;
+  color:#765a09;
+  background:#fffaf0;
+  border:1px dashed #d3b75c;
+  border-radius:18px;
+  font-size:17px;
+  font-weight:700;
+}
+.hv-price-note{
+  margin:28px auto 0;
+  max-width:1050px;
+  text-align:center;
+  color:#7b6c42;
+  font-size:14px;
+  line-height:1.65;
+  font-weight:400;
+}
+
+/* =========================================================
+   NỘI DUNG DƯỚI BẢNG GIÁ
+========================================================= */
+.hv-content{
+  width:100%;
+}
+.hv-section{
+  padding:56px 20px;
+  background:#fff;
+}
+.hv-section-alt{
+  background:#f7f7fa;
+}
+.hv-section-inner{
+  width:min(980px,100%);
+  margin:0 auto;
+}
+.hv-section h2{
+  margin:0 0 10px;
+  color:#151c2f;
+  font-size:clamp(24px,2.6vw,34px);
+  line-height:1.2;
+  font-weight:700;
+  letter-spacing:-.6px;
+}
+.hv-eyebrow{
+  margin:0 0 22px !important;
+  color:#986d00 !important;
+  font-size:16px !important;
+  font-weight:700 !important;
+}
+.hv-section p{
+  margin:0 0 18px;
+  color:#33322f;
+  font-size:16px;
+  line-height:1.75;
+  text-align:justify;
+  text-justify:inter-word;
+}
+.hv-section p:last-child{
+  margin-bottom:0;
+}
+
+/* MINI CARDS */
+.hv-mini-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin:26px 0 30px;
+}
+.hv-mini-card{
+  min-width:0;
+  padding:21px 22px;
+  background:#fffaf0;
+  border:1.5px solid #e6d49b;
+  border-radius:16px;
+}
+.hv-mini-card strong{
+  display:block;
+  margin-bottom:8px;
+  color:#986d00;
+  font-size:16px;
+  line-height:1.35;
+  font-weight:700;
+}
+.hv-mini-card p{
+  margin:0;
+  color:#3a3a3a;
+  font-size:14.5px;
+  line-height:1.65;
+  text-align:justify;
+}
+
+/* STEPS */
+.hv-steps{
+  list-style:none;
+  margin:26px 0 30px;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+.hv-steps li{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  padding:17px 18px;
+  background:#fffaf0;
+  border:1px solid #e6d49b;
+  border-radius:14px;
+}
+.hv-step-num{
+  flex:0 0 36px;
+  width:36px;
+  height:36px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:linear-gradient(105deg,#765400,#d3aa2e);
+  color:#fff;
+  font-size:15px;
+  font-weight:700;
+}
+.hv-steps strong{
+  display:block;
+  margin-bottom:4px;
+  color:#151c2f;
+  font-size:15.5px;
+  line-height:1.4;
+  font-weight:700;
+}
+.hv-steps p{
+  margin:0;
+  color:#3a3a3a;
+  font-size:14.5px;
+  line-height:1.65;
+}
+
+/* FAQ */
+.hv-faq{
+  margin-top:26px;
+  border-top:1px solid #e9e3cf;
+}
+.hv-faq details{
+  border-bottom:1px solid #e9e3cf;
+}
+.hv-faq summary{
+  cursor:pointer;
+  list-style:none;
+  padding:19px 0;
+  color:#151c2f;
+  font-size:16px;
+  line-height:1.45;
+  font-weight:700;
+}
+.hv-faq summary::-webkit-details-marker{
+  display:none;
+}
+.hv-faq summary::after{
+  content:"+";
+  float:right;
+  margin-left:15px;
+  color:#986d00;
+  font-size:22px;
+  line-height:1;
+}
+.hv-faq details[open] summary::after{
+  content:"−";
+}
+.hv-faq details p{
+  padding:0 0 20px;
+  margin:0;
+  font-size:15px;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+.hv-cta{
+  padding:64px 20px 72px;
+  text-align:center;
+  background:linear-gradient(105deg,#765400 0%,#b88700 35%,#d3aa2e 70%,#ebd06c 100%);
+}
+.hv-cta h2{
+  margin:0 0 10px;
+  color:#fff;
+  font-size:clamp(25px,2.8vw,35px);
+  line-height:1.2;
+  font-weight:700;
+}
+.hv-cta-desc{
+  margin:0 0 26px;
+  color:#fff7dd;
+  font-size:16px;
+  line-height:1.6;
+}
+.hv-cta-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:16px;
+}
+.hv-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:170px;
+  padding:16px 30px;
+  border-radius:999px;
+  font-size:15px;
+  line-height:1;
+  font-weight:700;
+  text-decoration:none !important;
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.hv-btn:hover{
+  transform:translateY(-2px);
+}
+.hv-btn-zalo{
+  background:#fff;
+  color:#0068ff !important;
+}
+.hv-btn-call{
+  background:#151c2f;
+  color:#fff !important;
+}
+.hv-btn-fb{
+  background:#1877f2;
+  color:#fff !important;
+}
+.hv-branches{
+  margin:28px auto 0;
+  max-width:760px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  overflow:hidden;
+  background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:18px;
+}
+.hv-branch{
+  padding:20px 26px;
+  text-align:center;
+}
+.hv-branch + .hv-branch{
+  border-left:1px solid rgba(255,255,255,.35);
+}
+.hv-branch strong{
+  display:block;
+  margin-bottom:6px;
+  color:#fff;
+  font-size:15px;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.hv-branch p{
+  margin:0;
+  color:#fff6dd;
+  font-size:14.5px;
+  line-height:1.6;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media(max-width:1300px){
+  .hv-tradein-app{
+    width:calc(100vw - 28px);
+    padding:34px 22px 50px;
+  }
+  .hv-price-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:900px){
+  .hv-condition-grid,
+  .hv-price-grid,
+  .hv-mini-grid{
+    grid-template-columns:1fr;
+  }
+  .hv-tradein-app{
+    width:calc(100vw - 20px);
+    padding:28px 15px 44px;
+    border-radius:20px;
+  }
+  .hv-phone-title{
+    min-height:62px;
+  }
+  .hv-phone-title h2{
+    font-size:21px;
+  }
+  .hv-section{
+    padding:44px 18px;
+  }
+}
+
+@media(max-width:560px){
+  .hv-tradein-app{
+    width:calc(100vw - 10px);
+    padding:24px 8px 38px;
+    border-radius:16px;
+  }
+  .hv-tradein-intro{
+    margin-bottom:22px;
+  }
+  .hv-tradein-intro h1{
+    font-size:29px;
+    letter-spacing:-.7px;
+  }
+  .hv-tradein-intro p{
+    font-size:15px;
+  }
+  .hv-condition-grid{
+    gap:13px;
+  }
+  .hv-condition-card{
+    min-height:auto;
+    padding:16px 14px;
+  }
+  .hv-condition-icon{
+    flex-basis:34px;
+    width:34px;
+    height:34px;
+    font-size:15px;
+  }
+  .hv-condition-card strong{
+    font-size:15px;
+  }
+  .hv-condition-card p{
+    font-size:13.5px;
+  }
+  .hv-search-wrap{
+    margin-bottom:26px;
+  }
+  .hv-search-wrap input{
+    height:54px;
+    padding-left:51px;
+    font-size:14px;
+  }
+  .hv-search-icon{
+    left:18px;
+    font-size:24px;
+  }
+  .hv-price-grid{
+    gap:20px;
+  }
+  .hv-phone-card{
+    border-radius:17px;
+  }
+  .hv-phone-title{
+    padding:14px 15px;
+  }
+  .hv-phone-title h2{
+    font-size:19px;
+  }
+  .hv-phone-title span{
+    font-size:10px;
+    padding:6px 8px;
+  }
+  .hv-card-table thead th{
+    padding:12px 5px;
+    font-size:11px;
+  }
+  .hv-card-table tbody td{
+    height:51px;
+    padding:11px 5px;
+    font-size:12px;
+  }
+  .hv-price-number{
+    font-size:13px;
+    letter-spacing:-.3px;
+  }
+  .hv-storage{
+    font-size:12px;
+  }
+  .hv-price-note{
+    font-size:12.5px;
+  }
+  .hv-section{
+    padding:36px 14px;
+  }
+  .hv-section h2{
+    font-size:24px;
+  }
+  .hv-section p{
+    font-size:15px;
+    line-height:1.7;
+  }
+  .hv-mini-card{
+    padding:18px 17px;
+  }
+  .hv-steps li{
+    gap:12px;
+    padding:15px 14px;
+  }
+  .hv-step-num{
+    flex-basis:32px;
+    width:32px;
+    height:32px;
+  }
+  .hv-btn{
+    width:100%;
+  }
+  .hv-cta-buttons{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .hv-branches{
+    grid-template-columns:1fr;
+  }
+  .hv-branch + .hv-branch{
+    border-left:none;
+    border-top:1px solid rgba(255,255,255,.35);
+  }
+}
+
+
+/* =========================================================
+   KHÓA FONT - CHỈ ARIAL, KHÔNG TẢI FONT NGOÀI
+   Chỉ dùng 2 mức trọng lượng chuẩn của Arial: 400 và 700.
+========================================================= */
+html, body, body *, input, button, select, textarea{
+  font-family:Arial, sans-serif !important;
+}
+body{
+  font-weight:400;
+}
+strong, b, h1, h2, h3, h4, th, summary, .hv-phone-title span{
+  font-weight:700 !important;
+}
+
+/* =========================================================
+   PHẦN NỘI DUNG DƯỚI BẢNG GIÁ - PREMIUM V2
+========================================================= */
+.hv-luxury-content{
+  width:100%;
+  overflow:hidden;
+  background:#fff;
+}
+.hv-lux-section{
+  padding:76px 20px;
+}
+.hv-lux-section-white{
+  background:#ffffff;
+}
+.hv-lux-section-cream{
+  background:#f8f5ec;
+}
+.hv-lux-section-dark{
+  background:#101010;
+  color:#ffffff;
+}
+.hv-lux-inner{
+  width:min(1180px,100%);
+  margin:0 auto;
+}
+.hv-lux-heading{
+  max-width:820px;
+  margin:0 0 34px;
+}
+.hv-lux-heading .hv-lux-kicker,
+.hv-lux-split-title .hv-lux-kicker{
+  display:inline-block;
+  margin-bottom:12px;
+  color:#a37a09;
+  font-size:12px;
+  line-height:1.4;
+  font-weight:700;
+  letter-spacing:1.35px;
+}
+.hv-lux-heading h2,
+.hv-lux-split-title h2{
+  margin:0 0 14px;
+  color:#151515;
+  font-size:clamp(27px,3vw,42px);
+  line-height:1.16;
+  font-weight:700;
+  letter-spacing:-.7px;
+}
+.hv-lux-heading p,
+.hv-lux-split-copy p{
+  margin:0;
+  color:#4d4d4d;
+  font-size:15.5px;
+  line-height:1.8;
+  font-weight:400;
+  text-align:justify;
+  text-justify:inter-word;
+}
+.hv-lux-heading-dark .hv-lux-kicker{
+  color:#d7b43c;
+}
+.hv-lux-heading-dark h2{
+  color:#ffffff;
+}
+.hv-lux-heading-dark p{
+  color:#c6c6c6;
+}
+
+.hv-lux-feature-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+.hv-lux-feature-card{
+  position:relative;
+  min-height:230px;
+  padding:30px 28px 27px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid #ded8c7;
+  border-radius:20px;
+  box-shadow:0 14px 36px rgba(28,23,8,.055);
+}
+.hv-lux-feature-card::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:4px;
+  background:linear-gradient(90deg,#7a5900,#d5ad31,#f0db83);
+}
+.hv-lux-feature-no{
+  display:inline-flex;
+  width:46px;
+  height:46px;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:26px;
+  border-radius:14px;
+  background:#141414;
+  color:#d9b33b;
+  font-size:13px;
+  line-height:1;
+  font-weight:700;
+}
+.hv-lux-feature-card h3{
+  margin:0 0 10px;
+  color:#171717;
+  font-size:19px;
+  line-height:1.35;
+  font-weight:700;
+}
+.hv-lux-feature-card p{
+  margin:0;
+  color:#555;
+  font-size:14.5px;
+  line-height:1.72;
+  font-weight:400;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+.hv-lux-process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;
+  position:relative;
+}
+.hv-lux-process-card{
+  position:relative;
+  min-height:220px;
+  padding:27px 24px 24px;
+  background:#171717;
+  border:1px solid #303030;
+  border-radius:18px;
+}
+.hv-lux-process-card span{
+  display:block;
+  margin-bottom:34px;
+  color:#d8b53e;
+  font-size:28px;
+  line-height:1;
+  font-weight:700;
+}
+.hv-lux-process-card h3{
+  margin:0 0 10px;
+  color:#fff;
+  font-size:18px;
+  line-height:1.35;
+  font-weight:700;
+}
+.hv-lux-process-card p{
+  margin:0;
+  color:#bdbdbd;
+  font-size:14px;
+  line-height:1.7;
+  font-weight:400;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+.hv-lux-split{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:70px;
+  align-items:start;
+  padding-bottom:34px;
+  border-bottom:1px solid #ddd5bd;
+}
+.hv-lux-split-title h2{
+  margin-bottom:0;
+}
+.hv-lux-split-copy{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.hv-lux-chip-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin-top:30px;
+}
+.hv-lux-chip{
+  min-height:106px;
+  padding:21px 20px;
+  background:rgba(255,255,255,.72);
+  border:1px solid #ded6be;
+  border-radius:16px;
+}
+.hv-lux-chip strong{
+  display:block;
+  margin-bottom:7px;
+  color:#2b2516;
+  font-size:15px;
+  line-height:1.4;
+  font-weight:700;
+}
+.hv-lux-chip span{
+  display:block;
+  color:#6c6659;
+  font-size:13.5px;
+  line-height:1.55;
+  font-weight:400;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+.hv-lux-faq-wrap{
+  width:min(980px,100%);
+}
+.hv-lux-faq{
+  border-top:1px solid #dedede;
+}
+.hv-lux-faq details{
+  border-bottom:1px solid #dedede;
+}
+.hv-lux-faq summary{
+  cursor:pointer;
+  list-style:none;
+  padding:21px 4px;
+  color:#1b1b1b;
+  font-size:16px;
+  line-height:1.5;
+  font-weight:700;
+}
+.hv-lux-faq summary::-webkit-details-marker{
+  display:none;
+}
+.hv-lux-faq summary::after{
+  content:"+";
+  float:right;
+  margin-left:18px;
+  color:#a37a09;
+  font-size:23px;
+  line-height:1;
+  font-weight:400;
+}
+.hv-lux-faq details[open] summary::after{
+  content:"−";
+}
+.hv-lux-faq details p{
+  margin:0;
+  padding:0 4px 22px;
+  color:#555;
+  font-size:14.5px;
+  line-height:1.75;
+  font-weight:400;
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+.hv-store-footer{
+  position:relative;
+  overflow:hidden;
+  padding:72px 24px 150px;
+  background:#0b0b0b;
+  color:#fff;
+  border-top:1px solid #181818;
+}
+.hv-store-footer::before{
+  content:"";
+  position:absolute;
+  width:540px;
+  height:540px;
+  right:-210px;
+  top:120px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(213,177,59,.11) 0%,rgba(213,177,59,0) 70%);
+  pointer-events:none;
+}
+.hv-store-inner{
+  position:relative;
+  z-index:1;
+  width:min(1120px,100%);
+  margin:0 auto;
+}
+.hv-store-head{
+  max-width:930px;
+  margin:0 auto 50px;
+  text-align:center;
+}
+.hv-store-brand{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  margin:0 auto 24px;
+  padding:0 31px;
+  border:1.5px solid #785f1e;
+  border-radius:999px;
+  background:linear-gradient(180deg,#1c1a13 0%,#15140f 100%);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.025);
+  color:#e1bb4b;
+  font-family:Arial,sans-serif !important;
+  font-size:18px;
+  line-height:1;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+.hv-store-head h2{
+  margin:0 0 18px;
+  color:#fff;
+  font-family:Arial,sans-serif !important;
+  font-size:clamp(30px,4vw,48px);
+  line-height:1.1;
+  font-weight:700;
+  letter-spacing:.4px;
+  text-transform:uppercase;
+}
+.hv-store-head p{
+  margin:0 auto;
+  max-width:820px;
+  color:#bcbcbc;
+  font-family:Arial,sans-serif !important;
+  font-size:clamp(16px,2vw,21px);
+  line-height:1.65;
+  font-weight:400;
+  text-align:center;
+}
+.hv-store-head p strong{
+  color:#e1bb4b;
+  font-weight:700;
+}
+.hv-store-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.hv-store-card{
+  min-width:0;
+  padding:28px;
+  border:1px solid #3a3a3a;
+  border-radius:28px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(203,159,37,.11),rgba(203,159,37,0) 38%),
+    #171717;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 16px 35px rgba(0,0,0,.18);
+}
+.hv-store-card-top{
+  display:flex;
+  align-items:flex-start;
+  gap:24px;
+}
+.hv-store-code{
+  flex:0 0 74px;
+  width:74px;
+  height:74px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:20px;
+  background:linear-gradient(145deg,#e2b82e 0%,#d5aa2b 100%);
+  color:#101010;
+  font-family:Arial,sans-serif !important;
+  font-size:21px;
+  line-height:1;
+  font-weight:700;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.3);
+}
+.hv-store-info{
+  min-width:0;
+  padding-top:4px;
+}
+.hv-store-info h3{
+  margin:0 0 13px;
+  color:#fff;
+  font-family:Arial,sans-serif !important;
+  font-size:22px;
+  line-height:1.25;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.hv-store-info p{
+  margin:0;
+  color:#c9c9c9;
+  font-family:Arial,sans-serif !important;
+  font-size:16px;
+  line-height:1.7;
+  font-weight:400;
+  text-align:justify;
+  text-justify:inter-word;
+}
+.hv-store-map{
+  width:100%;
+  min-height:68px;
+  margin-top:26px;
+  padding:0 22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  border:1.5px solid #8a6c1c;
+  border-radius:20px;
+  background:rgba(83,67,21,.22);
+  color:#e9c65a !important;
+  font-family:Arial,sans-serif !important;
+  font-size:17px;
+  line-height:1.2;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none !important;
+  text-transform:uppercase;
+  transition:background .16s ease,border-color .16s ease,transform .16s ease;
+}
+.hv-store-map:hover{
+  background:rgba(126,97,20,.30);
+  border-color:#c69c2a;
+  transform:translateY(-2px);
+}
+.hv-store-map svg{
+  flex:0 0 26px;
+  width:26px;
+  height:26px;
+  stroke:currentColor;
+}
+.hv-store-note{
+  max-width:960px;
+  margin:30px auto 0;
+  color:#727272;
+  font-family:Arial,sans-serif !important;
+  font-size:12.5px;
+  line-height:1.75;
+  font-weight:400;
+  text-align:justify;
+  text-justify:inter-word;
+}
+.hv-store-floating{
+  position:absolute;
+  z-index:4;
+  right:24px;
+  bottom:30px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:12px;
+}
+.hv-store-float-btn{
+  min-height:66px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:8px 24px 8px 9px;
+  border-radius:999px;
+  font-family:Arial,sans-serif !important;
+  font-size:18px;
+  line-height:1;
+  font-weight:700;
+  text-decoration:none !important;
+  box-shadow:0 12px 30px rgba(0,0,0,.32);
+  transition:transform .16s ease;
+}
+.hv-store-float-btn:hover{
+  transform:translateY(-2px);
+}
+.hv-store-float-icon{
+  flex:0 0 50px;
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  font-family:Arial,sans-serif !important;
+  font-size:23px;
+  font-weight:700;
+}
+.hv-store-float-zalo{
+  background:#1269ee;
+  color:#fff !important;
+}
+.hv-store-float-zalo .hv-store-float-icon{
+  background:#2e7ef7;
+  color:#fff;
+}
+.hv-store-float-call{
+  border:1.5px solid #8a6c1c;
+  background:#151515;
+  color:#fff !important;
+}
+.hv-store-float-call .hv-store-float-icon{
+  background:#e2b82e;
+  color:#111;
+}
+.hv-store-float-call svg{
+  width:24px;
+  height:24px;
+  stroke:currentColor;
+}
+
+/* Text mô tả nhỏ luôn canh đều hai bên */
+.hv-store-info p,
+.hv-store-note{
+  text-align:justify !important;
+  text-justify:inter-word !important;
+}
+
+@media(max-width:900px){
+  .hv-store-footer{
+    padding:62px 20px 160px;
+  }
+  .hv-store-grid{
+    grid-template-columns:1fr;
+  }
+  .hv-store-head{
+    margin-bottom:40px;
+  }
+}
+
+@media(max-width:560px){
+  .hv-store-footer{
+    padding:50px 14px 154px;
+  }
+  .hv-store-brand{
+    min-height:44px;
+    margin-bottom:20px;
+    padding:0 27px;
+    font-size:16px;
+    letter-spacing:2.5px;
+  }
+  .hv-store-head{
+    margin-bottom:34px;
+  }
+  .hv-store-head h2{
+    margin-bottom:16px;
+    font-size:31px;
+  }
+  .hv-store-head p{
+    font-size:15px;
+    line-height:1.65;
+  }
+  .hv-store-card{
+    padding:22px 18px;
+    border-radius:24px;
+  }
+  .hv-store-card-top{
+    gap:17px;
+  }
+  .hv-store-code{
+    flex-basis:62px;
+    width:62px;
+    height:62px;
+    border-radius:17px;
+    font-size:18px;
+  }
+  .hv-store-info{
+    padding-top:2px;
+  }
+  .hv-store-info h3{
+    margin-bottom:10px;
+    font-size:18px;
+  }
+  .hv-store-info p{
+    font-size:14px;
+    line-height:1.65;
+  }
+  .hv-store-map{
+    min-height:62px;
+    margin-top:22px;
+    padding:0 15px;
+    border-radius:18px;
+    font-size:15px;
+    gap:10px;
+  }
+  .hv-store-map svg{
+    flex-basis:22px;
+    width:22px;
+    height:22px;
+  }
+  .hv-store-note{
+    margin-top:25px;
+    padding:0 2px;
+    font-size:11.5px;
+  }
+  .hv-store-floating{
+    right:12px;
+    bottom:24px;
+    gap:10px;
+  }
+  .hv-store-float-btn{
+    min-height:58px;
+    gap:11px;
+    padding:7px 19px 7px 7px;
+    font-size:16px;
+  }
+  .hv-store-float-icon{
+    flex-basis:44px;
+    width:44px;
+    height:44px;
+    font-size:20px;
+  }
+}
+
+/* Nhóm text nhỏ: canh đều hai bên theo yêu cầu */
+.hv-condition-card p,
+.hv-price-note,
+.hv-lux-heading p,
+.hv-lux-feature-card p,
+.hv-lux-process-card p,
+.hv-lux-split-copy p,
+.hv-lux-chip span,
+.hv-lux-faq details p,
+.hv-lux-contact-copy p,
+.hv-lux-branch-card p,
+.hv-lux-contact-note,
+.hv-store-info p,
+.hv-store-note{
+  text-align:justify !important;
+  text-justify:inter-word !important;
+}
+
+@media(max-width:1050px){
+  .hv-lux-feature-grid{
+    grid-template-columns:1fr;
+  }
+  .hv-lux-feature-card{
+    min-height:0;
+  }
+  .hv-lux-process-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .hv-lux-chip-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media(max-width:760px){
+  .hv-lux-section{
+    padding:54px 16px;
+  }
+  .hv-lux-split{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .hv-lux-process-grid,
+  .hv-lux-chip-grid,
+  .hv-lux-branch-grid{
+    grid-template-columns:1fr;
+  }
+  .hv-lux-process-card{
+    min-height:0;
+  }
+}
+
+@media(max-width:560px){
+  .hv-lux-section{
+    padding:44px 13px;
+  }
+  .hv-lux-heading{
+    margin-bottom:26px;
+  }
+  .hv-lux-heading h2,
+  .hv-lux-split-title h2{
+    font-size:27px;
+    letter-spacing:-.4px;
+  }
+  .hv-lux-heading p,
+  .hv-lux-split-copy p{
+    font-size:14.5px;
+    line-height:1.72;
+  }
+  .hv-lux-feature-card{
+    padding:24px 20px 22px;
+  }
+  .hv-lux-process-card{
+    padding:23px 20px;
+  }
+  .hv-lux-process-card span{
+    margin-bottom:23px;
+  }
+  .hv-lux-chip{
+    min-height:0;
+  }
+}
+
+</style>
+<style id="hv-global-font-lock">html,body,body *,body *::before,body *::after{font-family:Arial,Helvetica,sans-serif!important}html,body{margin:0!important;padding:0!important;-webkit-text-size-adjust:100%}</style><meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><meta content="thu mua iphone quảng ngãi, thu mua điện thoại cũ giá cao quảng ngãi, bán iphone cũ ở đâu quảng ngãi, lên đời iphone quảng ngãi, thu cũ đổi mới iphone, định giá iphone cũ, thu mua iphone hỏng quảng ngãi" name="keywords"/><meta content="Thu Mua iPhone Quảng Ngãi | Thu Cũ Đổi Mới - HV Mobile" property="og:title"/><meta content="Thu mua iPhone cũ tại Quảng Ngãi, kiểm tra và định giá minh bạch. Có thể bán máy nhận tiền hoặc bù chênh lên đời iPhone tại HV Mobile." property="og:description"/><meta content="https://hvmobile.netlify.app/thu-cu/" property="og:url"/><meta content="website" property="og:type"/><meta content="summary" name="twitter:card"/><link href="https://hvmobile.netlify.app/thu-cu/" rel="canonical"/><script id="hv-service-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Thu cũ đổi mới iPhone tại Quảng Ngãi","provider":{"@type":"Organization","name":"HV Mobile"},"areaServed":"Quảng Ngãi","serviceType":["Thu mua iPhone cũ","Định giá iPhone cũ","Thu cũ đổi mới iPhone","Lên đời iPhone"],"url":"https://hvmobile.netlify.app/thu-cu/"}</script><link href="../hv-mobile-google-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="../hv-mobile-google-192.png" rel="shortcut icon" type="image/png"/>
+<link href="../hv-mobile-google-192.png" rel="apple-touch-icon"/>
+<link href="../assets/hv-shell.css" rel="stylesheet"/>
+<meta content="HV Mobile" property="og:site_name"/>
+
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="HV Mobile - Trang chủ" class="logo-link" href="../"><img alt="Logo HV Mobile" src="../assets/img-063.jpg"/></a>
+<nav aria-label="Điều hướng chính" class="desktop-nav"><a href="../">GIỚI THIỆU</a><a href="../iphone/">IPHONE</a><a href="../phu-kien/">PHỤ KIỆN</a><a href="../bao-hanh/">BẢO HÀNH</a><a href="../tra-gop/">TRẢ GÓP</a><a class="active" aria-current="page" href="../thu-cu/">THU CŨ ĐỔI MỚI</a><a href="../sua-chua/">SỬA CHỮA</a><a href="../bai-viet/">BÀI VIẾT</a><a href="../lien-he/">LIÊN HỆ</a></nav>
+<div class="header-actions">
+<a class="zalo" href="https://zalo.me/4499562857082296287" rel="noopener" target="_blank">ZALO</a>
+<a class="call" href="tel:0901970567">GỌI NGAY</a>
+<a class="fb" href="https://www.facebook.com/HVMobile/" rel="noopener" target="_blank">FANPAGE</a>
+</div>
+<button aria-expanded="false" aria-label="Mở menu" class="menu-btn" id="menuBtn">☰</button>
+</div>
+<div class="mobile-menu" id="mobileMenu"><div class="navs"><a href="../">GIỚI THIỆU</a><a href="../iphone/">IPHONE</a><a href="../phu-kien/">PHỤ KIỆN</a><a href="../bao-hanh/">BẢO HÀNH</a><a href="../tra-gop/">TRẢ GÓP</a><a class="active" aria-current="page" href="../thu-cu/">THU CŨ ĐỔI MỚI</a><a href="../sua-chua/">SỬA CHỮA</a><a href="../bai-viet/">BÀI VIẾT</a><a href="../lien-he/">LIÊN HỆ</a></div><div class="acts"><a href="https://zalo.me/4499562857082296287" rel="noopener" target="_blank">ZALO</a><a href="tel:0901970567">GỌI NGAY 0901 970 567</a><a href="https://www.facebook.com/HVMobile/" rel="noopener" target="_blank">FANPAGE</a></div></div>
+</header>
+<main id="main-content">
+<section class="hv-tradein-app">
+<div class="hv-tradein-intro">
+<h1>BẢNG GIÁ THU CŨ IPHONE</h1>
+<p>Giá tham khảo áp dụng cho <strong>máy zin, ngoại hình đẹp</strong>. Giá thực tế được xác định sau khi kiểm tra trực tiếp tình trạng máy.</p>
+</div>
+<div class="hv-condition-grid">
+<div class="hv-condition-card">
+<div class="hv-condition-icon">01</div>
+<div>
+<strong>MÁY ZIN</strong>
+<p>Bảng giá áp dụng cho máy có tình trạng linh kiện và chức năng đạt tiêu chuẩn kiểm tra của HV Mobile.</p>
+</div>
+</div>
+<div class="hv-condition-card">
+<div class="hv-condition-icon">02</div>
+<div>
+<strong>NGOẠI HÌNH ĐẸP</strong>
+<p>Khung viền, mặt lưng và màn hình không cấn móp hoặc hư hỏng nặng. Máy xấu hơn vẫn được hỗ trợ định giá lại.</p>
+</div>
+</div>
+<div class="hv-condition-card">
+<div class="hv-condition-icon">03</div>
+<div>
+<strong>ĐỊNH GIÁ MINH BẠCH</strong>
+<p>Nhân viên kiểm tra và báo mức thu thực tế trước. Khách hàng tự quyết định bán máy hoặc bù chênh để lên đời.</p>
+</div>
+</div>
+</div>
+<div class="hv-search-wrap">
+<span class="hv-search-icon">⌕</span>
+<input autocomplete="off" id="hvTradeinSearch" placeholder="Tìm nhanh: 15 Pro Max, 13 Pro, 17 Pro Max, 512G..." type="text"/>
+</div>
+<div class="hv-price-grid" id="hvPriceGrid"></div>
+<div class="hv-no-result" id="hvNoResult">
+    Không tìm thấy dòng iPhone phù hợp.
+  </div>
+<p class="hv-price-note">
+    ✦ Giá trên là bảng giá tham khảo dành cho máy zin, ngoại hình đẹp. Máy trầy xước, pin yếu, đã thay linh kiện, lỗi chức năng hoặc có tình trạng khác vẫn có thể được thu lại nhưng mức giá sẽ được kiểm tra và báo riêng.
+  </p>
+</section>
+<main class="hv-content hv-luxury-content">
+<!-- KHỐI GIỚI THIỆU CAO CẤP -->
+<section class="hv-lux-section hv-lux-section-white">
+<div class="hv-lux-inner">
+<div class="hv-lux-heading">
+<span class="hv-lux-kicker">THU CŨ MINH BẠCH · LÊN ĐỜI NHẸ NHÀNG</span>
+<h2>Máy của bạn được định giá như thế nào?</h2>
+<p>Giá thu thực tế không chỉ phụ thuộc vào đời máy và dung lượng. HV Mobile kiểm tra tình trạng tổng thể của thiết bị để đưa ra mức giá phù hợp, rõ ràng trước khi khách hàng quyết định bán hoặc đổi máy.</p>
+</div>
+<div class="hv-lux-feature-grid">
+<article class="hv-lux-feature-card">
+<span class="hv-lux-feature-no">01</span>
+<h3>Kiểm tra tình trạng thật</h3>
+<p>Đánh giá ngoại hình, màn hình, pin, Face ID, camera, loa, micro, cảm biến, mainboard và các chức năng quan trọng của máy.</p>
+</article>
+<article class="hv-lux-feature-card">
+<span class="hv-lux-feature-no">02</span>
+<h3>Báo giá trước khi giao dịch</h3>
+<p>Sau khi kiểm tra, nhân viên báo mức thu thực tế để khách hàng xem trước. Không tự ý chốt giá khi khách chưa đồng ý.</p>
+</article>
+<article class="hv-lux-feature-card">
+<span class="hv-lux-feature-no">03</span>
+<h3>Bán máy hoặc bù chênh</h3>
+<p>Khách hàng có thể nhận tiền trực tiếp hoặc dùng giá trị máy cũ để bù chênh và nâng cấp lên chiếc iPhone phù hợp hơn.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- QUY TRÌNH -->
+<section class="hv-lux-section hv-lux-section-dark">
+<div class="hv-lux-inner">
+<div class="hv-lux-heading hv-lux-heading-dark">
+<span class="hv-lux-kicker">QUY TRÌNH TẠI HV MOBILE</span>
+<h2>Thu cũ chỉ với 4 bước</h2>
+<p>Quy trình được thiết kế ngắn gọn để khách hàng biết rõ từng bước, từng hạng mục kiểm tra và mức giá trước khi quyết định.</p>
+</div>
+<div class="hv-lux-process-grid">
+<article class="hv-lux-process-card">
+<span>01</span>
+<h3>Gửi thông tin máy</h3>
+<p>Gửi dòng máy, dung lượng, phần trăm pin, tình trạng ngoại hình và hình ảnh thực tế nếu có.</p>
+</article>
+<article class="hv-lux-process-card">
+<span>02</span>
+<h3>Kiểm tra trực tiếp</h3>
+<p>Nhân viên kiểm tra ngoại hình, linh kiện và các chức năng quan trọng để xác định tình trạng máy.</p>
+</article>
+<article class="hv-lux-process-card">
+<span>03</span>
+<h3>Nhận mức định giá</h3>
+<p>Mức giá thu cuối cùng được thông báo rõ sau khi kiểm tra. Khách hàng tự quyết định có giao dịch hay không.</p>
+</article>
+<article class="hv-lux-process-card">
+<span>04</span>
+<h3>Nhận tiền hoặc lên đời</h3>
+<p>Bán máy để nhận tiền hoặc dùng giá trị máy cũ để bù chênh cho chiếc iPhone muốn nâng cấp.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- MÁY KHÔNG ZIN ĐẸP -->
+<section class="hv-lux-section hv-lux-section-cream">
+<div class="hv-lux-inner">
+<div class="hv-lux-split">
+<div class="hv-lux-split-title">
+<span class="hv-lux-kicker">MÁY KHÔNG ĐẠT CHUẨN ZIN · ĐẸP?</span>
+<h2>HV Mobile vẫn hỗ trợ thu lại</h2>
+</div>
+<div class="hv-lux-split-copy">
+<p>Bảng giá phía trên dành cho máy zin và ngoại hình đẹp. Nếu máy có tình trạng khác, HV Mobile vẫn tiếp nhận kiểm tra và báo giá lại dựa trên mức độ thực tế.</p>
+<p>Khách hàng được biết rõ tình trạng nào làm thay đổi mức giá và có toàn quyền quyết định sau khi nhận báo giá.</p>
+</div>
+</div>
+<div class="hv-lux-chip-grid">
+<div class="hv-lux-chip"><strong>Pin yếu / đã thay pin</strong><span>Vẫn hỗ trợ định giá</span></div>
+<div class="hv-lux-chip"><strong>Trầy xước / cấn viền</strong><span>Đánh giá theo mức độ thực tế</span></div>
+<div class="hv-lux-chip"><strong>Đã ép kính</strong><span>Kiểm tra chất lượng màn hình</span></div>
+<div class="hv-lux-chip"><strong>Lỗi Face ID</strong><span>Báo lại mức thu phù hợp</span></div>
+<div class="hv-lux-chip"><strong>Lỗi camera / chức năng</strong><span>Kiểm tra trước khi chốt giá</span></div>
+<div class="hv-lux-chip"><strong>Đã từng sửa chữa</strong><span>Định giá theo tình trạng máy</span></div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="hv-lux-section hv-lux-section-white">
+<div class="hv-lux-inner hv-lux-faq-wrap">
+<div class="hv-lux-heading">
+<span class="hv-lux-kicker">GIẢI ĐÁP NHANH</span>
+<h2>Câu hỏi thường gặp</h2>
+</div>
+<div class="hv-lux-faq">
+<details>
+<summary>Giá trên website có phải giá thu chính xác 100% không?</summary>
+<p>Không. Bảng giá là mức tham khảo dành cho máy zin, ngoại hình đẹp. Giá cuối cùng được xác định sau khi kiểm tra trực tiếp thiết bị.</p>
+</details>
+<details>
+<summary>Máy đã thay pin có thu không?</summary>
+<p>Có. HV Mobile sẽ kiểm tra tình trạng pin, loại linh kiện và tổng thể máy để đưa ra mức giá phù hợp.</p>
+</details>
+<details>
+<summary>Máy trầy hoặc cấn viền có thu không?</summary>
+<p>Có. Mức giá sẽ được điều chỉnh dựa trên tình trạng ngoại hình thực tế của máy tại thời điểm kiểm tra.</p>
+</details>
+<details>
+<summary>Tôi chỉ muốn bán máy, không đổi máy mới có được không?</summary>
+<p>Có. Sau khi kiểm tra và thống nhất mức giá, khách hàng có thể bán máy trực tiếp mà không cần mua máy mới.</p>
+</details>
+<details>
+<summary>Kiểm tra xong nhưng tôi chưa muốn bán thì sao?</summary>
+<p>Khách hàng có thể tham khảo mức giá trước rồi quyết định. Không bắt buộc phải bán hoặc đổi máy nếu chưa phù hợp.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- ĐỊA CHỈ CỬA HÀNG -->
+</main>
+<script>
+(function(){
+
+const hvTradeinPhones = [
+  {
+    name:"iPhone X",
+    search:"iphone x x",
+    rows:[
+      ["64GB","2.800.000đ"],
+      ["128GB","-"],
+      ["256GB","3.500.000đ"]
+    ]
+  },
+  {
+    name:"iPhone XS",
+    search:"iphone xs xs",
+    rows:[
+      ["64GB","3.500.000đ"],
+      ["128GB","-"],
+      ["256GB","4.500.000đ"],
+      ["512GB","5.700.000đ"]
+    ]
+  },
+  {
+    name:"iPhone XS Max",
+    search:"iphone xs max xsm xsmax",
+    rows:[
+      ["64GB","4.500.000đ"],
+      ["128GB","-"],
+      ["256GB","5.300.000đ"],
+      ["512GB","6.500.000đ"]
+    ]
+  },
+  {
+    name:"iPhone XR",
+    search:"iphone xr xr",
+    rows:[
+      ["64GB","2.800.000đ"],
+      ["128GB","3.500.000đ"],
+      ["256GB","4.300.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 11",
+    search:"iphone 11",
+    rows:[
+      ["64GB","4.500.000đ"],
+      ["128GB","5.300.000đ"],
+      ["256GB","6.000.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 11 Pro",
+    search:"iphone 11 pro",
+    rows:[
+      ["64GB","5.000.000đ"],
+      ["128GB","-"],
+      ["256GB","6.000.000đ"],
+      ["512GB","7.200.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 11 Pro Max",
+    search:"iphone 11 pro max 11 prm 11 promax",
+    rows:[
+      ["64GB","6.000.000đ"],
+      ["128GB","-"],
+      ["256GB","7.000.000đ"],
+      ["512GB","8.200.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 12",
+    search:"iphone 12",
+    rows:[
+      ["64GB","5.500.000đ"],
+      ["128GB","6.000.000đ"],
+      ["256GB","7.000.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 12 Pro",
+    search:"iphone 12 pro",
+    rows:[
+      ["64GB","-"],
+      ["128GB","7.500.000đ"],
+      ["256GB","8.500.000đ"],
+      ["512GB","9.700.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 12 Pro Max",
+    search:"iphone 12 pro max 12 prm 12 promax",
+    rows:[
+      ["64GB","-"],
+      ["128GB","9.300.000đ"],
+      ["256GB","10.100.000đ"],
+      ["512GB","11.300.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 13",
+    search:"iphone 13",
+    rows:[
+      ["64GB","-"],
+      ["128GB","7.500.000đ"],
+      ["256GB","8.200.000đ"],
+      ["512GB","9.400.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 13 Pro",
+    search:"iphone 13 pro",
+    rows:[
+      ["64GB","-"],
+      ["128GB","8.500.000đ"],
+      ["256GB","9.500.000đ"],
+      ["512GB","10.700.000đ"],
+      ["1TB","11.900.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 13 Pro Max",
+    search:"iphone 13 pro max 13 prm 13 promax",
+    rows:[
+      ["64GB","-"],
+      ["128GB","9.500.000đ"],
+      ["256GB","10.500.000đ"],
+      ["512GB","11.700.000đ"],
+      ["1TB","12.900.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 14",
+    search:"iphone 14",
+    rows:[
+      ["64GB","-"],
+      ["128GB","9.300.000đ"],
+      ["256GB","9.300.000đ"],
+      ["512GB","10.500.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 14 Plus",
+    search:"iphone 14 plus",
+    rows:[
+      ["64GB","-"],
+      ["128GB","9.800.000đ"],
+      ["256GB","10.500.000đ"],
+      ["512GB","11.700.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 14 Pro",
+    search:"iphone 14 pro",
+    rows:[
+      ["64GB","-"],
+      ["128GB","11.500.000đ"],
+      ["256GB","12.500.000đ"],
+      ["512GB","13.700.000đ"],
+      ["1TB","14.900.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 14 Pro Max",
+    search:"iphone 14 pro max 14 prm 14 promax",
+    rows:[
+      ["64GB","-"],
+      ["128GB","14.500.000đ"],
+      ["256GB","15.500.000đ"],
+      ["512GB","16.700.000đ"],
+      ["1TB","17.900.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 15",
+    search:"iphone 15",
+    rows:[
+      ["64GB","-"],
+      ["128GB","12.000.000đ"],
+      ["256GB","13.300.000đ"],
+      ["512GB","14.500.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 15 Plus",
+    search:"iphone 15 plus",
+    rows:[
+      ["64GB","-"],
+      ["128GB","13.300.000đ"],
+      ["256GB","14.300.000đ"],
+      ["512GB","15.500.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 15 Pro",
+    search:"iphone 15 pro",
+    rows:[
+      ["64GB","-"],
+      ["128GB","14.700.000đ"],
+      ["256GB","15.700.000đ"],
+      ["512GB","16.900.000đ"],
+      ["1TB","18.100.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 15 Pro Max",
+    search:"iphone 15 pro max 15 prm 15 promax",
+    rows:[
+      ["64GB","-"],
+      ["128GB","-"],
+      ["256GB","18.500.000đ"],
+      ["512GB","19.700.000đ"],
+      ["1TB","20.900.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 16",
+    search:"iphone 16",
+    rows:[
+      ["64GB","-"],
+      ["128GB","15.300.000đ"],
+      ["256GB","16.500.000đ"],
+      ["512GB","17.700.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 16 Plus",
+    search:"iphone 16 plus",
+    rows:[
+      ["64GB","-"],
+      ["128GB","16.900.000đ"],
+      ["256GB","17.900.000đ"],
+      ["512GB","19.100.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 16 Pro",
+    search:"iphone 16 pro",
+    rows:[
+      ["64GB","-"],
+      ["128GB","19.500.000đ"],
+      ["256GB","20.800.000đ"],
+      ["512GB","22.000.000đ"],
+      ["1TB","23.200.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 16 Pro Max",
+    search:"iphone 16 pro max 16 prm 16 promax",
+    rows:[
+      ["64GB","-"],
+      ["128GB","-"],
+      ["256GB","23.700.000đ"],
+      ["512GB","24.900.000đ"],
+      ["1TB","26.100.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 17",
+    search:"iphone 17",
+    rows:[
+      ["64GB","-"],
+      ["128GB","-"],
+      ["256GB","19.800.000đ"],
+      ["512GB","21.100.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 17 Air",
+    search:"iphone 17 air",
+    rows:[
+      ["64GB","-"],
+      ["128GB","-"],
+      ["256GB","17.300.000đ"],
+      ["512GB","18.500.000đ"],
+      ["1TB","19.700.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 17 Pro",
+    search:"iphone 17 pro",
+    rows:[
+      ["64GB","-"],
+      ["128GB","-"],
+      ["256GB","28.500.000đ"],
+      ["512GB","29.700.000đ"],
+      ["1TB","30.900.000đ"]
+    ]
+  },
+  {
+    name:"iPhone 17 Pro Max",
+    search:"iphone 17 pro max 17 prm 17 promax",
+    rows:[
+      ["64GB","-"],
+      ["128GB","-"],
+      ["256GB","30.000.000đ"],
+      ["512GB","34.500.000đ"],
+      ["1TB","42.200.000đ"],
+      ["2TB","56.200.000đ"]
+    ]
+  }
+];
+
+const grid = document.getElementById("hvPriceGrid");
+const input = document.getElementById("hvTradeinSearch");
+const noResult = document.getElementById("hvNoResult");
+
+function normalizeText(text){
+  return String(text || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .replace(/đ/g,"d")
+    .replace(/\s+/g," ")
+    .trim();
+}
+
+function cardHTML(phone, visibleRows){
+  const sourceRows = visibleRows || phone.rows;
+  const rows = sourceRows.filter(row => row[1] && row[1] !== "-");
+
+  return `
+    <article class="hv-phone-card">
+      <div class="hv-phone-title">
+        <h2>${phone.name}</h2>
+        <span>THU CŨ</span>
+      </div>
+
+      <table class="hv-card-table">
+        <thead>
+          <tr>
+            <th>DUNG LƯỢNG</th>
+            <th>GIÁ THU CŨ</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(row => `
+            <tr>
+              <td><span class="hv-storage">${row[0]}</span></td>
+              <td>
+                <span class="hv-price-number">${row[1]}</span>
+              </td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </article>
+  `;
+}
+
+function render(){
+  const keyword = normalizeText(input.value);
+
+  if(!keyword){
+    const cards = hvTradeinPhones
+      .map(phone => ({phone, rows:phone.rows.filter(row => row[1] && row[1] !== "-")}))
+      .filter(item => item.rows.length);
+    grid.innerHTML = cards.map(item => cardHTML(item.phone, item.rows)).join("");
+    noResult.style.display = "none";
+    return;
+  }
+
+  const matched = [];
+
+  hvTradeinPhones.forEach(phone => {
+    const phoneText = normalizeText(phone.name + " " + phone.search);
+    const availableRows = phone.rows.filter(row => row[1] && row[1] !== "-");
+    const matchingRows = availableRows.filter(row => {
+      const rowText = normalizeText(phone.name + " " + phone.search + " " + row[0] + " " + row[1]);
+      return rowText.includes(keyword);
+    });
+
+    if(phoneText.includes(keyword) && availableRows.length){
+      matched.push({phone, rows:availableRows});
+    }else if(matchingRows.length){
+      matched.push({phone, rows:matchingRows});
+    }
+  });
+
+  grid.innerHTML = matched.map(item => cardHTML(item.phone, item.rows)).join("");
+  noResult.style.display = matched.length ? "none" : "block";
+}
+
+input.addEventListener("input", render);
+render();
+
+})();
+</script>
+</main>
+<footer class="site-footer" id="footer-contact">
+<div class="footer-inner">
+<div class="foot-grid">
+<div class="footer-brand">
+<div style="color:#d4af37;font-size:30px;font-weight:700;line-height:1.2;margin-bottom:8px">HV MOBILE</div>
+<p style="font-size:14px;margin:0 0 22px">Uy tín tạo nên thương hiệu</p>
+<p style="margin:0;color:#fff;line-height:1.9">Hotline:<br/><a href="tel:0901970567">CS1: 0901.970.567</a><br/><a href="tel:0899822225">CS2: 0899.822.225</a></p>
+</div>
+<div><h4>DỊCH VỤ</h4><ul><li><a href="../iphone/">iPhone</a></li><li><a href="../phu-kien/">Phụ kiện</a></li><li><a href="../tra-gop/">Trả góp</a></li><li><a href="../thu-cu/">Thu cũ đổi mới</a></li><li><a href="../bao-hanh/">Bảo hành</a></li><li><a href="../sua-chua/">Sửa chữa</a></li></ul></div>
+<div><h4>HỆ THỐNG HV MOBILE</h4><div class="branch"><strong>HV Mobile Quảng Ngãi</strong><span>43 Lê Thánh Tôn, phường Cẩm Thành, Quảng Ngãi</span><br/><a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=43+L%C3%AA+Th%C3%A1nh+T%C3%B4n%2C+Qu%E1%BA%A3ng+Ng%C3%A3i" rel="noopener" target="_blank">MỞ GOOGLE MAPS</a></div><div class="branch"><strong>HV Mobile Đà Nẵng</strong><span>649 Trần Cao Vân, phường Thanh Khê, Đà Nẵng</span><br/><a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=649+Tr%E1%BA%A7n+Cao+V%C3%A2n%2C+%C4%90%C3%A0+N%E1%BA%B5ng" rel="noopener" target="_blank">MỞ GOOGLE MAPS</a></div></div>
+</div>
+<div class="foot-bottom"><span>© 2026 HV Mobile. Đồng hành cùng bạn trong kỷ nguyên số.</span><span>Thiết kế bởi HV Mobile</span></div>
+</div>
+</footer>
+<a class="float-zalo" href="https://zalo.me/4499562857082296287" rel="noopener" target="_blank">ZALO TƯ VẤN</a>
+<script defer src="../assets/hv-shell.js"></script>
+</body>
+</html>

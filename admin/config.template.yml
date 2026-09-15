@@ -1,0 +1,149 @@
+backend:
+  name: github
+  repo: "__CMS_REPO__"
+  branch: main
+  use_graphql: true
+
+locale: vi
+site_url: "__SITE_URL__"
+display_url: "__SITE_URL__"
+logo_url: "__SITE_URL__/hv-mobile-google-192.png"
+publish_mode: simple
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "bang-gia"
+    label: "Quản trị bảng giá"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Bảng giá iPhone"
+        name: "gia-iphone"
+        file: "content/prices/iphone.json"
+        format: "json"
+        fields:
+          - { label: "Ngày cập nhật", name: "updated_at", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+          - label: "Các dòng iPhone"
+            name: "models"
+            widget: "list"
+            summary: "{{fields.name}}"
+            collapsed: true
+            fields:
+              - { label: "Tên máy", name: "name", widget: "string" }
+              - { label: "Mã đường dẫn", name: "slug", widget: "string", hint: "Không đổi nếu chỉ cập nhật giá." }
+              - { label: "Từ khóa tìm kiếm", name: "search", widget: "string" }
+              - { label: "Hiển thị trên website", name: "visible", widget: "boolean", default: true, hint: "Tắt để ẩn hoàn toàn sản phẩm khỏi website." }
+              - { label: "Còn hàng", name: "in_stock", widget: "boolean", default: true, required: false, hint: "Tắt khi sản phẩm hết hàng; sản phẩm vẫn hiện nhưng có nhãn TẠM HẾT HÀNG." }
+              - { label: "Ghi chú sản phẩm", name: "note", widget: "text", required: false, hint: "Ví dụ: hàng đẹp, bản VN/A, màu đang về..." }
+              - label: "Màu sắc"
+                name: "colors"
+                widget: "list"
+                required: false
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Tên màu", name: "name", widget: "string" }
+                  - { label: "Mã màu", name: "hex", widget: "string", required: false, hint: "Ví dụ #d4af37. Có thể để trống." }
+              - label: "Dung lượng và giá"
+                name: "rows"
+                widget: "list"
+                summary: "{{fields.storage}} — 99%: {{fields.price_99}}"
+                fields:
+                  - { label: "Dung lượng", name: "storage", widget: "string" }
+                  - { label: "Giá hàng 95%", name: "price_95", widget: "string", hint: "Ví dụ 10.500.000đ; nhập - nếu chưa có giá." }
+                  - { label: "Giá hàng 99%", name: "price_99", widget: "string" }
+                  - { label: "Giá Like New", name: "price_like_new", widget: "string" }
+
+      - label: "Giá thu cũ"
+        name: "gia-thu-cu"
+        file: "content/prices/tradein.json"
+        format: "json"
+        fields:
+          - { label: "Ngày cập nhật", name: "updated_at", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+          - label: "Các dòng iPhone thu cũ"
+            name: "models"
+            widget: "list"
+            summary: "{{fields.name}}"
+            collapsed: true
+            fields:
+              - { label: "Tên máy", name: "name", widget: "string" }
+              - { label: "Từ khóa tìm kiếm", name: "search", widget: "string" }
+              - { label: "Hiển thị trên website", name: "visible", widget: "boolean", default: true }
+              - label: "Dung lượng và giá thu"
+                name: "rows"
+                widget: "list"
+                summary: "{{fields.storage}} — {{fields.price}}"
+                fields:
+                  - { label: "Dung lượng", name: "storage", widget: "string" }
+                  - { label: "Giá thu", name: "price", widget: "string", hint: "Nhập - nếu chưa có giá." }
+
+      - label: "Bảng giá phụ kiện"
+        name: "gia-phu-kien"
+        file: "content/prices/accessories.json"
+        format: "json"
+        fields:
+          - { label: "Ngày cập nhật", name: "updated_at", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+          - label: "Sản phẩm phụ kiện"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.price}}"
+            collapsed: true
+            fields:
+              - { label: "Mã sản phẩm", name: "id", widget: "string", hint: "Không đổi mã này." }
+              - { label: "Tên sản phẩm", name: "name", widget: "string" }
+              - { label: "Giá bán", name: "price", widget: "string" }
+              - { label: "Tình trạng", name: "status", widget: "select", options: ["Còn hàng", "Tạm hết hàng", "Liên hệ"] }
+              - { label: "Hiển thị trên website", name: "visible", widget: "boolean", default: true }
+
+      - label: "Giá sửa chữa"
+        name: "gia-sua-chua"
+        file: "content/prices/repairs.json"
+        format: "json"
+        fields:
+          - { label: "Ngày cập nhật", name: "updated_at", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+          - label: "Các dòng máy sửa chữa"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.model}}"
+            collapsed: true
+            fields:
+              - { label: "Từ khóa tìm kiếm", name: "search", widget: "string" }
+              - { label: "Tên máy", name: "model", widget: "string" }
+              - { label: "Giá pin", name: "battery", widget: "string" }
+              - { label: "Giá màn hình", name: "screen", widget: "string" }
+              - { label: "Giá Face ID", name: "face_id", widget: "string" }
+              - { label: "Giá lưng", name: "back", widget: "string" }
+              - { label: "Giá lên vỏ", name: "frame", widget: "string" }
+              - { label: "Hiển thị trên website", name: "visible", widget: "boolean", default: true }
+
+  - name: "bai-viet"
+    label: "BÀI VIẾT"
+    label_singular: "Bài viết"
+    folder: "content/posts"
+    create: true
+    delete: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    summary: "{{title}} — {{date}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Tiêu đề", name: "title", widget: "string", hint: "Nên có từ khóa chính và địa phương, tối đa khoảng 65 ký tự." }
+      - { label: "Mô tả Google", name: "description", widget: "text", hint: "Tóm tắt hấp dẫn khoảng 140–160 ký tự." }
+      - { label: "Ngày đăng", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { label: "Ảnh đại diện", name: "image", widget: "image", required: false, hint: "Ảnh thật tại cửa hàng hoặc ảnh sản phẩm, nên dùng tỷ lệ 16:9." }
+      - label: "Chuyên mục"
+        name: "category"
+        widget: "select"
+        options: ["Kinh nghiệm iPhone", "Bảng giá", "Trả góp", "Thu cũ đổi mới", "Sửa chữa", "Tin HV Mobile"]
+        default: "Kinh nghiệm iPhone"
+      - { label: "Tác giả", name: "author", widget: "string", default: "HV Mobile" }
+      - { label: "Ẩn bài viết", name: "draft", widget: "boolean", default: false, required: false, hint: "Bật mục này nếu chưa muốn bài xuất hiện trên website." }
+      - { label: "Nội dung", name: "body", widget: "markdown", hint: "Viết tự nhiên, chia tiêu đề rõ ràng và dùng ảnh thật. Không lặp từ khóa quá nhiều." }

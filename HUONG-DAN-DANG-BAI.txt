@@ -9,7 +9,7 @@ PHẦN 1 – THIẾT LẬP MỘT LẦN
 3. Mở đúng dự án hvmobile trên Netlify.
 4. Vào Project configuration > Build & deploy > Repository và liên kết kho GitHub vừa tạo.
 5. Trong Netlify, thêm hai biến môi trường:
-   CMS_REPO = ten-github-cua-ban/hv-mobile-website
+   CMS_REPO = kimmyenn2005-sudo/hv-mobile-website
    SITE_URL = https://hvmobile.netlify.app
 6. Bấm Deploy site. Netlify tự nhận:
    Build command: node scripts/build.mjs

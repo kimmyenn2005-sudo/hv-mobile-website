@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HV Mobile Quảng Ngãi | Địa Chỉ Cửa Hàng iPhone Gần Đây</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#f6f2e8}
+body,.page,.page *{
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-style:normal!important;
+  letter-spacing:0!important;
+  -webkit-font-smoothing:antialiased;
+}
+body,.page,.page *{font-weight:400}
+h1,h2,h3,strong,b,.btn,.brand,.branch-code,.hours-title,.support-title{font-weight:700!important}
+
+:root{
+  --gold:#d6ad3f;
+  --gold-dark:#9d7619;
+  --black:#111;
+  --paper:#fffdf8;
+  --cream:#f6f2e8;
+  --line:#ddd2c1;
+  --muted:#655f56;
+}
+
+.page{color:#171717}
+.wrap{width:min(1180px,100%);margin:0 auto;padding:0 22px}
+
+.topbar{
+  background:#111;
+  border-bottom:1px solid #2a2a2a;
+}
+.topbar-inner{
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.brand{color:var(--gold);font-size:12px}
+.top-note{color:#aaa;font-size:11px}
+
+.hero{
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+  padding:28px 0 24px;
+}
+.hero-inner{max-width:700px;margin:0 auto;text-align:center}
+.hero .eyebrow{
+  display:inline-block;
+  color:var(--gold-dark);
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.hero p{
+  margin:0 auto;
+  max-width:650px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
+.branches{
+  background:var(--cream);
+  padding:34px 0 40px;
+}
+.branch-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+.branch-card{
+  background:#fff;
+  border:1px solid #d8cebd;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 12px 28px rgba(0,0,0,.05);
+}
+.branch-image-wrap{
+  position:relative;
+  aspect-ratio:3/4;
+  background:#f1ede4;
+}
+.branch-image{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center top;
+  display:block;
+}
+.branch-badge{
+  position:absolute;
+  top:14px;
+  left:14px;
+  background:rgba(17,17,17,.92);
+  color:var(--gold);
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:11px;
+}
+.branch-body{padding:22px 22px 22px}
+.branch-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+.branch-title-block h2{
+  margin:0 0 6px;
+  font-size:24px;
+  line-height:1.15;
+}
+.branch-code{
+  color:var(--gold-dark);
+  font-size:12px;
+  white-space:nowrap;
+  padding-top:4px;
+}
+.address{
+  margin:0;
+  color:#5e5951;
+  font-size:13.5px;
+  line-height:1.65;
+}
+.info-box{
+  margin-top:18px;
+  padding:14px 16px;
+  border:1px solid #e8decd;
+  border-radius:14px;
+  background:#fbf8f2;
+}
+.hours-title{
+  display:block;
+  margin-bottom:4px;
+  color:#111;
+  font-size:12px;
+}
+.hours-text{
+  color:#655f56;
+  font-size:12.5px;
+  line-height:1.65;
+}
+.service{
+  margin-top:14px;
+  color:#8a8378;
+  font-size:11px;
+  line-height:1.55;
+}
+.actions{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.btn{
+  min-height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:11px 14px;
+  border-radius:10px;
+  text-decoration:none!important;
+  font-size:12px;
+  border:1px solid transparent;
+}
+.btn-map{background:var(--gold);color:#111!important}
+.btn-call{background:#fff;color:#111!important;border-color:#cec3b1}
+
+.support{
+  background:#111;
+  color:#fff;
+  padding:24px 0;
+}
+.support-inner{
+  display:grid;
+  grid-template-columns:1fr 1fr 1.2fr;
+  gap:24px;
+  align-items:center;
+}
+.support-item small{
+  display:block;
+  margin-bottom:5px;
+  color:#7f7f7f;
+  font-size:9px;
+}
+.support-item a{
+  color:#fff!important;
+  text-decoration:none;
+  font-size:19px;
+  font-weight:700;
+}
+.support-note{
+  border-left:1px solid #333;
+  padding-left:22px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.support-title{
+  display:block;
+  margin-bottom:5px;
+  color:var(--gold);
+  font-size:11px;
+}
+.support-note p{
+  margin:0;
+  color:#b6b6b6;
+  font-size:12px;
+  line-height:1.55;
+}
+
+.footer{
+  background:#111;
+  border-top:1px solid #292929;
+  color:#666;
+  padding:12px 0 15px;
+  font-size:10px;
+  text-align:center;
+}
+
+@media(max-width:900px){
+  .branch-grid{grid-template-columns:1fr}
+  .support-inner{grid-template-columns:1fr 1fr}
+  .support-note{
+    grid-column:1/-1;
+    border-left:0;
+    border-top:1px solid #333;
+    padding:14px 0 0;
+  }
+}
+
+@media(max-width:560px){
+  .wrap{padding:0 14px}
+  .top-note{display:none}
+  .hero .eyebrow{font-size:17px}
+  .hero p{font-size:13px}
+  .branch-body{padding:18px 16px 18px}
+  .branch-title-block h2{font-size:21px}
+  .actions{grid-template-columns:1fr}
+  .support-inner{grid-template-columns:1fr}
+  .support-note{grid-column:auto}
+}
+</style>
+<style id="hv-global-font-lock">html,body,body *,body *::before,body *::after{font-family:Arial,Helvetica,sans-serif!important}html,body{margin:0!important;padding:0!important;-webkit-text-size-adjust:100%}</style><meta content="Địa chỉ HV Mobile Quảng Ngãi: 43 Lê Thánh Tôn, phường Cẩm Thành. Mua bán iPhone, thu cũ đổi mới, bảo hành và sửa chữa. Có chỉ đường Google Maps." name="description"/><meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><meta content="hv mobile quảng ngãi, cửa hàng iphone quảng ngãi, cửa hàng điện thoại quảng ngãi, shop iphone quảng ngãi, cửa hàng bán iphone gần đây, mua điện thoại gần đây nhất, sửa điện thoại quảng ngãi" name="keywords"/><meta content="HV Mobile Quảng Ngãi | Địa Chỉ Cửa Hàng iPhone Gần Đây" property="og:title"/><meta content="Địa chỉ HV Mobile Quảng Ngãi: 43 Lê Thánh Tôn, phường Cẩm Thành. Mua bán iPhone, thu cũ đổi mới, bảo hành và sửa chữa. Có chỉ đường Google Maps." property="og:description"/><meta content="https://hvmobile.netlify.app/lien-he/" property="og:url"/><meta content="website" property="og:type"/><meta content="summary" name="twitter:card"/><link href="https://hvmobile.netlify.app/lien-he/" rel="canonical"/><script id="hv-localbusiness-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ElectronicsStore","@id":"https://hvmobile.netlify.app/lien-he/#quang-ngai","name":"HV Mobile Quảng Ngãi","url":"https://hvmobile.netlify.app/lien-he/","telephone":"+84901970567","address":{"@type":"PostalAddress","streetAddress":"43 Lê Thánh Tôn","addressLocality":"Quảng Ngãi","addressRegion":"Quảng Ngãi","addressCountry":"VN"},"openingHours":"Mo-Su 08:00-21:00","areaServed":"Quảng Ngãi","knowsAbout":["iPhone","iPhone cũ","iPhone Like New","trả góp iPhone","thu cũ đổi mới iPhone","bảo hành iPhone","sửa chữa iPhone"]},{"@type":"ElectronicsStore","@id":"https://hvmobile.netlify.app/lien-he/#da-nang","name":"HV Mobile Đà Nẵng","url":"https://hvmobile.netlify.app/lien-he/","telephone":"+84899822225","address":{"@type":"PostalAddress","streetAddress":"649 Trần Cao Vân","addressLocality":"Đà Nẵng","addressRegion":"Đà Nẵng","addressCountry":"VN"},"openingHours":"Mo-Su 08:00-22:00","areaServed":"Đà Nẵng","knowsAbout":["iPhone","iPhone cũ","iPhone Like New","trả góp iPhone","thu cũ đổi mới iPhone","bảo hành iPhone","sửa chữa iPhone"]}]}</script><link href="../hv-mobile-google-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="../hv-mobile-google-192.png" rel="shortcut icon" type="image/png"/>
+<link href="../hv-mobile-google-192.png" rel="apple-touch-icon"/>
+<link href="../assets/hv-shell.css" rel="stylesheet"/>
+<meta content="HV Mobile" property="og:site_name"/>
+<script id="hv-local-business-schema" type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MobilePhoneStore",
+      "@id": "https://hvmobile.netlify.app/#quang-ngai",
+      "name": "HV Mobile Quảng Ngãi",
+      "url": "https://hvmobile.netlify.app/",
+      "logo": "https://hvmobile.netlify.app/hv-mobile-google-192.png",
+      "image": "https://hvmobile.netlify.app/hv-mobile-google-192.png",
+      "telephone": "+84901970567",
+      "priceRange": "₫₫",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "43 Lê Thánh Tôn, phường Cẩm Thành",
+        "addressLocality": "Quảng Ngãi",
+        "addressRegion": "Quảng Ngãi",
+        "addressCountry": "VN"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=43+Lê+Thánh+Tôn,+Quảng+Ngãi",
+      "sameAs": ["https://www.facebook.com/HVMobile/", "https://zalo.me/4499562857082296287"]
+    },
+    {
+      "@type": "MobilePhoneStore",
+      "@id": "https://hvmobile.netlify.app/#da-nang",
+      "name": "HV Mobile Đà Nẵng",
+      "url": "https://hvmobile.netlify.app/lien-he/",
+      "logo": "https://hvmobile.netlify.app/hv-mobile-google-192.png",
+      "image": "https://hvmobile.netlify.app/hv-mobile-google-192.png",
+      "telephone": "+84899822225",
+      "priceRange": "₫₫",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "649 Trần Cao Vân, phường Thanh Khê",
+        "addressLocality": "Đà Nẵng",
+        "addressRegion": "Đà Nẵng",
+        "addressCountry": "VN"
+      },
+      "hasMap": "https://www.google.com/maps/search/?api=1&query=649+Trần+Cao+Vân,+Đà+Nẵng",
+      "sameAs": ["https://www.facebook.com/HVMobile/", "https://zalo.me/4499562857082296287"]
+    }
+  ]
+}</script>
+</head>
+<body>
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="HV Mobile - Trang chủ" class="logo-link" href="../"><img alt="Logo HV Mobile" src="../assets/img-063.jpg"/></a>
+<nav aria-label="Điều hướng chính" class="desktop-nav"><a href="../">GIỚI THIỆU</a><a href="../iphone/">IPHONE</a><a href="../phu-kien/">PHỤ KIỆN</a><a href="../bao-hanh/">BẢO HÀNH</a><a href="../tra-gop/">TRẢ GÓP</a><a href="../thu-cu/">THU CŨ ĐỔI MỚI</a><a href="../sua-chua/">SỬA CHỮA</a><a href="../bai-viet/">BÀI VIẾT</a><a class="active" aria-current="page" href="../lien-he/">LIÊN HỆ</a></nav>
+<div class="header-actions">
+<a class="zalo" href="https://zalo.me/4499562857082296287" rel="noopener" target="_blank">ZALO</a>
+<a class="call" href="tel:0901970567">GỌI NGAY</a>
+<a class="fb" href="https://www.facebook.com/HVMobile/" rel="noopener" target="_blank">FANPAGE</a>
+</div>
+<button aria-expanded="false" aria-label="Mở menu" class="menu-btn" id="menuBtn">☰</button>
+</div>
+<div class="mobile-menu" id="mobileMenu"><div class="navs"><a href="../">GIỚI THIỆU</a><a href="../iphone/">IPHONE</a><a href="../phu-kien/">PHỤ KIỆN</a><a href="../bao-hanh/">BẢO HÀNH</a><a href="../tra-gop/">TRẢ GÓP</a><a href="../thu-cu/">THU CŨ ĐỔI MỚI</a><a href="../sua-chua/">SỬA CHỮA</a><a href="../bai-viet/">BÀI VIẾT</a><a class="active" aria-current="page" href="../lien-he/">LIÊN HỆ</a></div><div class="acts"><a href="https://zalo.me/4499562857082296287" rel="noopener" target="_blank">ZALO</a><a href="tel:0901970567">GỌI NGAY 0901 970 567</a><a href="https://www.facebook.com/HVMobile/" rel="noopener" target="_blank">FANPAGE</a></div></div>
+</header>
+<main id="main-content">
+<div class="page">
+<div class="topbar">
+<div class="wrap topbar-inner">
+<div class="brand">HV MOBILE</div>
+<div class="top-note">Quảng Ngãi • Đà Nẵng</div>
+</div>
+</div>
+<section class="hero">
+<div class="wrap hero-inner">
+<div class="eyebrow">THÔNG TIN CỬA HÀNG</div>
+<p>Chọn chi nhánh gần bạn để xem đường đi hoặc gọi hỗ trợ nhanh trước khi đến cửa hàng.</p>
+</div>
+</section>
+<section class="branches">
+<div class="wrap branch-grid">
+<article class="branch-card">
+<div class="branch-image-wrap">
+<img alt="Chi nhánh HV Mobile Quảng Ngãi" class="branch-image" src="../assets/img-061.jpg"/>
+<div class="branch-badge">CHI NHÁNH QUẢNG NGÃI</div>
+</div>
+<div class="branch-body">
+<div class="branch-top">
+<div class="branch-title-block">
+<h2>HV Mobile Quảng Ngãi</h2>
+</div>
+<div class="branch-code">CS1</div>
+</div>
+<p class="address">43 Lê Thánh Tôn, phường Cẩm Thành, Quảng Ngãi</p>
+<div class="info-box">
+<span class="hours-title">Thời gian mở cửa:</span>
+<div class="hours-text">Thứ 2 - Chủ Nhật (kể cả Ngày Lễ) 08:00 - 21:00</div>
+</div>
+<div class="service">Mua bán iPhone • Thu cũ đổi mới • Bảo hành • Sửa chữa</div>
+<div class="actions">
+<a class="btn btn-map" href="https://www.google.com/maps/dir/?api=1&amp;destination=43+Le+Thanh+Ton,+phuong+Cam+Thanh,+Quang+Ngai" rel="noopener" target="_blank">CHỈ ĐƯỜNG</a>
+<a class="btn btn-call" href="tel:0901970567">GỌI NGAY</a>
+</div>
+</div>
+</article>
+<article class="branch-card">
+<div class="branch-image-wrap">
+<img alt="Chi nhánh HV Mobile Đà Nẵng" class="branch-image" src="../assets/img-062.webp"/>
+<div class="branch-badge">CHI NHÁNH ĐÀ NẴNG</div>
+</div>
+<div class="branch-body">
+<div class="branch-top">
+<div class="branch-title-block">
+<h2>HV Mobile Đà Nẵng</h2>
+</div>
+<div class="branch-code">CS2</div>
+</div>
+<p class="address">649 Trần Cao Vân, phường Thanh Khê, Đà Nẵng</p>
+<div class="info-box">
+<span class="hours-title">Thời gian mở cửa:</span>
+<div class="hours-text">Thứ 2 - Chủ Nhật (kể cả Ngày Lễ) 08:00 - 22:00</div>
+</div>
+<div class="service">Mua bán iPhone • Thu cũ đổi mới • Bảo hành • Sửa chữa</div>
+<div class="actions">
+<a class="btn btn-map" href="https://www.google.com/maps/dir/?api=1&amp;destination=649+Tran+Cao+Van,+phuong+Thanh+Khe,+Da+Nang" rel="noopener" target="_blank">CHỈ ĐƯỜNG</a>
+<a class="btn btn-call" href="tel:0899822225">GỌI NGAY</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div>
+</main>
+<footer class="site-footer" id="footer-contact">
+<div class="footer-inner">
+<div class="foot-grid">
+<div class="footer-brand">
+<div style="color:#d4af37;font-size:30px;font-weight:700;line-height:1.2;margin-bottom:8px">HV MOBILE</div>
+<p style="font-size:14px;margin:0 0 22px">Uy tín tạo nên thương hiệu</p>
+<p style="margin:0;color:#fff;line-height:1.9">Hotline:<br/><a href="tel:0901970567">CS1: 0901.970.567</a><br/><a href="tel:0899822225">CS2: 0899.822.225</a></p>
+</div>
+<div><h4>DỊCH VỤ</h4><ul><li><a href="../iphone/">iPhone</a></li><li><a href="../phu-kien/">Phụ kiện</a></li><li><a href="../tra-gop/">Trả góp</a></li><li><a href="../thu-cu/">Thu cũ đổi mới</a></li><li><a href="../bao-hanh/">Bảo hành</a></li><li><a href="../sua-chua/">Sửa chữa</a></li></ul></div>
+<div><h4>HỆ THỐNG HV MOBILE</h4><div class="branch"><strong>HV Mobile Quảng Ngãi</strong><span>43 Lê Thánh Tôn, phường Cẩm Thành, Quảng Ngãi</span><br/><a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=43+L%C3%AA+Th%C3%A1nh+T%C3%B4n%2C+Qu%E1%BA%A3ng+Ng%C3%A3i" rel="noopener" target="_blank">MỞ GOOGLE MAPS</a></div><div class="branch"><strong>HV Mobile Đà Nẵng</strong><span>649 Trần Cao Vân, phường Thanh Khê, Đà Nẵng</span><br/><a class="map-btn" href="https://www.google.com/maps/search/?api=1&amp;query=649+Tr%E1%BA%A7n+Cao+V%C3%A2n%2C+%C4%90%C3%A0+N%E1%BA%B5ng" rel="noopener" target="_blank">MỞ GOOGLE MAPS</a></div></div>
+</div>
+<div class="foot-bottom"><span>© 2026 HV Mobile. Đồng hành cùng bạn trong kỷ nguyên số.</span><span>Thiết kế bởi HV Mobile</span></div>
+</div>
+</footer>
+<a class="float-zalo" href="https://zalo.me/4499562857082296287" rel="noopener" target="_blank">ZALO TƯ VẤN</a>
+<script defer src="../assets/hv-shell.js"></script>
+</body>
+</html>

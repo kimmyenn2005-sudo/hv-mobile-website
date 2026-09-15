@@ -1,0 +1,47 @@
+{
+  "updated_at": "2026-09-15",
+  "products": [
+    {
+      "id": "cap-mikha",
+      "name": "Cáp sạc linh kiện MIKHA 60W",
+      "price": "100.000đ",
+      "status": "Còn hàng",
+      "visible": true
+    },
+    {
+      "id": "cu-mikha-20w",
+      "name": "Củ sạc linh kiện MIKHA 20W",
+      "price": "150.000đ",
+      "status": "Còn hàng",
+      "visible": true
+    },
+    {
+      "id": "cu-apple-20w",
+      "name": "Củ sạc zin chính hãng Apple 20W",
+      "price": "500.000đ",
+      "status": "Còn hàng",
+      "visible": true
+    },
+    {
+      "id": "cap-apple-typec",
+      "name": "Cáp sạc chính hãng Apple USB-C to Lightning",
+      "price": "300.000đ",
+      "status": "Còn hàng",
+      "visible": true
+    },
+    {
+      "id": "tai-nghe",
+      "name": "Tai nghe MIKHA Airbuds 3",
+      "price": "400.000đ",
+      "status": "Còn hàng",
+      "visible": true
+    },
+    {
+      "id": "sac-du-phong",
+      "name": "Sạc dự phòng MIKHA 10.000mAh 22.5W",
+      "price": "400.000đ",
+      "status": "Còn hàng",
+      "visible": true
+    }
+  ]
+}

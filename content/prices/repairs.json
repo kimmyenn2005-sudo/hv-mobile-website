@@ -1,0 +1,255 @@
+{
+  "updated_at": "2026-09-15",
+  "services": [
+    {
+      "search": "x",
+      "model": "X",
+      "battery": "500.000đ",
+      "screen": "820.000đ",
+      "face_id": "550.000đ",
+      "back": "300.000đ",
+      "frame": "800.000đ",
+      "visible": true
+    },
+    {
+      "search": "xs",
+      "model": "XS",
+      "battery": "500.000đ",
+      "screen": "820.000đ",
+      "face_id": "550.000đ",
+      "back": "300.000đ",
+      "frame": "900.000đ",
+      "visible": true
+    },
+    {
+      "search": "xr",
+      "model": "XR",
+      "battery": "500.000đ",
+      "screen": "820.000đ",
+      "face_id": "550.000đ",
+      "back": "300.000đ",
+      "frame": "800.000đ",
+      "visible": true
+    },
+    {
+      "search": "xs max",
+      "model": "XS Max",
+      "battery": "500.000đ",
+      "screen": "980.000đ",
+      "face_id": "550.000đ",
+      "back": "400.000đ",
+      "frame": "900.000đ",
+      "visible": true
+    },
+    {
+      "search": "11",
+      "model": "11",
+      "battery": "500.000đ",
+      "screen": "700.000đ",
+      "face_id": "550.000đ",
+      "back": "300.000đ",
+      "frame": "900.000đ",
+      "visible": true
+    },
+    {
+      "search": "11 pro",
+      "model": "11 Pro",
+      "battery": "550.000đ",
+      "screen": "980.000đ",
+      "face_id": "550.000đ",
+      "back": "400.000đ",
+      "frame": "1.200.000đ",
+      "visible": true
+    },
+    {
+      "search": "11 pro max",
+      "model": "11 Pro Max",
+      "battery": "550.000đ",
+      "screen": "1.150.000đ",
+      "face_id": "550.000đ",
+      "back": "450.000đ",
+      "frame": "1.500.000đ",
+      "visible": true
+    },
+    {
+      "search": "12",
+      "model": "12",
+      "battery": "550.000đ",
+      "screen": "1.250.000đ",
+      "face_id": "600.000đ",
+      "back": "500.000đ",
+      "frame": "950.000đ",
+      "visible": true
+    },
+    {
+      "search": "12 pro",
+      "model": "12 Pro",
+      "battery": "550.000đ",
+      "screen": "1.250.000đ",
+      "face_id": "650.000đ",
+      "back": "550.000đ",
+      "frame": "1.550.000đ",
+      "visible": true
+    },
+    {
+      "search": "12 pro max",
+      "model": "12 Pro Max",
+      "battery": "650.000đ",
+      "screen": "1.650.000đ",
+      "face_id": "700.000đ",
+      "back": "750.000đ",
+      "frame": "1.650.000đ",
+      "visible": true
+    },
+    {
+      "search": "13",
+      "model": "13",
+      "battery": "550.000đ",
+      "screen": "1.350.000đ",
+      "face_id": "900.000đ",
+      "back": "550.000đ",
+      "frame": "1.050.000đ",
+      "visible": true
+    },
+    {
+      "search": "13 pro",
+      "model": "13 Pro",
+      "battery": "600.000đ",
+      "screen": "1.700.000đ",
+      "face_id": "900.000đ",
+      "back": "650.000đ",
+      "frame": "1.550.000đ",
+      "visible": true
+    },
+    {
+      "search": "13 pro max",
+      "model": "13 Pro Max",
+      "battery": "750.000đ",
+      "screen": "1.800.000đ",
+      "face_id": "900.000đ",
+      "back": "750.000đ",
+      "frame": "1.650.000đ",
+      "visible": true
+    },
+    {
+      "search": "14",
+      "model": "14",
+      "battery": "650.000đ",
+      "screen": "1.350.000đ",
+      "face_id": "950.000đ",
+      "back": "550.000đ",
+      "frame": "1.150.000đ",
+      "visible": true
+    },
+    {
+      "search": "14 plus",
+      "model": "14 Plus",
+      "battery": "650.000đ",
+      "screen": "1.350.000đ",
+      "face_id": "950.000đ",
+      "back": "650.000đ",
+      "frame": "1.150.000đ",
+      "visible": true
+    },
+    {
+      "search": "14 pro",
+      "model": "14 Pro",
+      "battery": "700.000đ",
+      "screen": "1.450.000đ",
+      "face_id": "950.000đ",
+      "back": "750.000đ",
+      "frame": "1.650.000đ",
+      "visible": true
+    },
+    {
+      "search": "14 pro max",
+      "model": "14 Pro Max",
+      "battery": "700.000đ",
+      "screen": "1.950.000đ",
+      "face_id": "1.050.000đ",
+      "back": "750.000đ",
+      "frame": "1.750.000đ",
+      "visible": true
+    },
+    {
+      "search": "15",
+      "model": "15",
+      "battery": "—",
+      "screen": "—",
+      "face_id": "1.050.000đ",
+      "back": "750.000đ",
+      "frame": "1.550.000đ",
+      "visible": true
+    },
+    {
+      "search": "15 plus",
+      "model": "15 Plus",
+      "battery": "—",
+      "screen": "—",
+      "face_id": "1.050.000đ",
+      "back": "850.000đ",
+      "frame": "1.550.000đ",
+      "visible": true
+    },
+    {
+      "search": "15 pro",
+      "model": "15 Pro",
+      "battery": "—",
+      "screen": "—",
+      "face_id": "1.050.000đ",
+      "back": "950.000đ",
+      "frame": "1.750.000đ",
+      "visible": true
+    },
+    {
+      "search": "15 pro max",
+      "model": "15 Pro Max",
+      "battery": "—",
+      "screen": "—",
+      "face_id": "1.200.000đ",
+      "back": "1.100.000đ",
+      "frame": "1.850.000đ",
+      "visible": true
+    },
+    {
+      "search": "16",
+      "model": "16",
+      "battery": "—",
+      "screen": "—",
+      "face_id": "1.150.000đ",
+      "back": "950.000đ",
+      "frame": "1.650.000đ",
+      "visible": true
+    },
+    {
+      "search": "16 plus",
+      "model": "16 Plus",
+      "battery": "—",
+      "screen": "—",
+      "face_id": "1.150.000đ",
+      "back": "1.050.000đ",
+      "frame": "1.650.000đ",
+      "visible": true
+    },
+    {
+      "search": "16 pro",
+      "model": "16 Pro",
+      "battery": "—",
+      "screen": "—",
+      "face_id": "1.250.000đ",
+      "back": "1.200.000đ",
+      "frame": "1.950.000đ",
+      "visible": true
+    },
+    {
+      "search": "16 pro max",
+      "model": "16 Pro Max",
+      "battery": "—",
+      "screen": "—",
+      "face_id": "1.350.000đ",
+      "back": "1.350.000đ",
+      "frame": "2.050.000đ",
+      "visible": true
+    }
+  ]
+}

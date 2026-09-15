@@ -1,0 +1,62 @@
+HV MOBILE – HƯỚNG DẪN KẾT NỐI VÀ ĐĂNG BÀI
+================================================
+
+PHẦN 1 – THIẾT LẬP MỘT LẦN
+
+1. Tạo một kho mã GitHub mới, ví dụ: hv-mobile-website.
+2. Đưa TOÀN BỘ tệp trong thư mục website này lên nhánh main của kho mã.
+   Lưu ý: package.json và netlify.toml phải nằm ngay ngoài cùng của kho mã.
+3. Mở đúng dự án hvmobile trên Netlify.
+4. Vào Project configuration > Build & deploy > Repository và liên kết kho GitHub vừa tạo.
+5. Trong Netlify, thêm hai biến môi trường:
+   CMS_REPO = ten-github-cua-ban/hv-mobile-website
+   SITE_URL = https://hvmobile.netlify.app
+6. Bấm Deploy site. Netlify tự nhận:
+   Build command: node scripts/build.mjs
+   Publish directory: dist
+
+PHẦN 2 – BẬT ĐĂNG NHẬP GITHUB CHO TRANG QUẢN TRỊ
+
+1. Mở GitHub > Settings > Developer settings > OAuth Apps > New OAuth App.
+2. Điền:
+   Application name: HV Mobile CMS
+   Homepage URL: https://hvmobile.netlify.app
+   Authorization callback URL: https://api.netlify.com/auth/done
+3. Tạo ứng dụng, sao chép Client ID và tạo Client Secret.
+4. Mở Netlify > dự án hvmobile > Project configuration > Access & security > OAuth.
+5. Chọn Install provider > GitHub, dán Client ID và Client Secret rồi lưu.
+6. Tài khoản đăng bài phải được cấp quyền ghi vào kho GitHub của website.
+
+PHẦN 3 – ĐĂNG BÀI HẰNG NGÀY
+
+1. Truy cập: https://hvmobile.netlify.app/admin/
+2. Chọn Login with GitHub.
+3. Chọn Bài viết SEO > Bài viết mới.
+4. Nhập tiêu đề, mô tả Google, ngày đăng, ảnh, chuyên mục và nội dung.
+5. Đảm bảo “Ẩn bài viết” đang tắt.
+6. Bấm Xuất bản.
+7. Hệ thống tự lưu bài lên GitHub, Netlify tự deploy và sitemap tự cập nhật.
+
+Đường dẫn bài sau khi đăng:
+https://hvmobile.netlify.app/bai-viet/ten-bai-viet/
+
+PHẦN 4 – CẬP NHẬT BẢNG GIÁ
+
+1. Truy cập: https://hvmobile.netlify.app/admin/
+2. Chọn Quản trị bảng giá.
+3. Chọn đúng nhóm cần sửa: Giá bán iPhone, Giá thu cũ, Giá phụ kiện hoặc Giá sửa chữa.
+4. Mở dòng sản phẩm, sửa giá và cập nhật Ngày cập nhật.
+5. Giữ nguyên tên máy, mã đường dẫn và mã sản phẩm nếu chỉ thay giá.
+6. Bấm Xuất bản. Netlify sẽ tự cập nhật website sau khi hoàn tất bản deploy mới.
+
+Quy ước nhập giá:
+- Nhập đầy đủ, ví dụ: 10.500.000đ
+- Nhập dấu - hoặc — nếu chưa niêm yết giá.
+- Tắt “Hiển thị trên website” nếu muốn tạm ẩn một dòng sản phẩm.
+
+LƯU Ý
+
+- Không tải ZIP thủ công lên Netlify sau khi đã kết nối GitHub.
+- Không đưa Client Secret vào file website hoặc gửi công khai.
+- Bài mẫu đang được ẩn và không hiển thị cho khách hàng.
+- Google không cập nhật ngay. Bài viết cần nội dung thật, hữu ích và ảnh thật của cửa hàng.

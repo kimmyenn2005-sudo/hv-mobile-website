@@ -1,0 +1,12 @@
+{
+  "name": "hv-mobile-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/preview.mjs",
+    "check": "node scripts/check.mjs",
+    "check:ui": "node scripts/ui-check.mjs"
+  }
+}

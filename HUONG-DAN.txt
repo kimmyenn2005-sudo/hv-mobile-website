@@ -1,0 +1,28 @@
+HV MOBILE - BẢN TỐI ƯU TỐC ĐỘ + SEO
+
+DEPLOY:
+1. Giải nén file ZIP.
+2. Mở thư mục HV-MOBILE-SEO-FAST.
+3. Kéo CẢ THƯ MỤC HV-MOBILE-SEO-FAST vào đúng project hvmobile trên Netlify.
+4. Link vẫn giữ nguyên: https://hvmobile.netlify.app/
+
+SAU DEPLOY KIỂM TRA:
+- https://hvmobile.netlify.app/
+- https://hvmobile.netlify.app/google1e0b702130489067.html
+- https://hvmobile.netlify.app/sitemap.xml
+
+SEARCH CONSOLE:
+- Kiểm tra URL: https://hvmobile.netlify.app/
+- Chọn KIỂM TRA URL ĐANG HOẠT ĐỘNG
+- Sau đó YÊU CẦU LẬP CHỈ MỤC
+- Vào Sơ đồ trang web và gửi: sitemap.xml
+
+ĐÃ TỐI ƯU:
+- Không đổi bố cục/nội dung chính.
+- Tách file HTML gốc ~84 MB thành index rất nhẹ + 8 trang riêng.
+- Tách 64 ảnh ra thư mục assets.
+- PNG không trong suốt chuyển WebP chất lượng cao; PNG có alpha giữ lossless.
+- JPEG giữ nguyên ảnh gốc.
+- Bỏ font nhúng base64 nặng, dùng Arial hệ thống.
+- Thêm sitemap.xml và robots.txt.
+- Giữ file xác minh Google Search Console.

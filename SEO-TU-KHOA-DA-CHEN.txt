@@ -1,0 +1,21 @@
+HV MOBILE - SEO TỪ KHÓA PHỔ BIẾN
+
+Đã đưa bộ từ khóa vào website theo cách KHÔNG làm thay đổi giao diện/chức năng:
+- Title từng trang
+- Meta description
+- Canonical
+- Open Graph
+- Meta keywords (chỉ bổ trợ; Google không dùng thẻ này để xếp hạng)
+- JSON-LD WebSite/Organization
+- LocalBusiness cho 2 chi nhánh từ thông tin đã có trên website
+- Service schema cho sửa chữa / thu cũ / trả góp
+- Alt chỉ được bổ sung khi ảnh trước đó không có alt
+
+Không chèn đoạn text ẩn và không nhồi từ khóa vào phần nhìn thấy, để tránh keyword stuffing.
+
+LƯU Ý:
+- Các cụm như "mở khóa iCloud", "unlock iPhone", "khôi phục dữ liệu" KHÔNG được gắn thành dịch vụ vì website hiện tại chưa thể hiện rõ HV Mobile đang cung cấp những dịch vụ đó.
+- Cụm "iPhone xách tay" cũng không được đẩy thành tiêu đề chính để tránh tạo thông tin bán hàng không chắc chắn.
+- Các từ "gần đây" được dùng ở trang liên hệ/trang chủ vì Google tự kết hợp với vị trí người tìm.
+
+Sau deploy, Search Console vẫn dùng sitemap hiện tại.

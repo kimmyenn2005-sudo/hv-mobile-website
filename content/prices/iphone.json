@@ -1063,20 +1063,6 @@
       "in_stock": true,
       "note": "",
       "colors": []
-    },
-    {
-      "visible": true,
-      "in_stock": true,
-      "name": "iPhone 18 Pro",
-      "slug": "iphone-18-pro",
-      "search": "18 Pro",
-      "colors": [],
-      "rows": [
-        {
-          "storage": "256 GB",
-          "price_like_new": "38.990.000đ"
-        }
-      ]
     }
   ]
 }

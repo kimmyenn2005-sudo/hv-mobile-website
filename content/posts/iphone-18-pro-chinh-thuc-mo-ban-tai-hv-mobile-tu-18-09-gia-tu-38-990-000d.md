@@ -116,7 +116,9 @@ Từ **18/09/2026**, khách hàng có thể liên hệ HV Mobile để tham kh�
 **Giá mở bán iPhone 18 Pro 256GB: 38.990.000đ.**
 
 📍 **HV Mobile Quảng Ngãi:** 43 Lê Thánh Tôn – P. Cẩm Thành
+
 📍 **HV Mobile Đà Nẵng:** 649 Trần Cao Vân – P. Thanh Khê
+
 📞 **Hotline: 0901 970 567**
 
 **HV Mobile – Đồng hành cùng bạn trong kỷ nguyên số.**

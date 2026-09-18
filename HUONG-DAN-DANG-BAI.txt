@@ -9,8 +9,8 @@ PHẦN 1 – THIẾT LẬP MỘT LẦN
 3. Mở đúng dự án hvmobile trên Netlify.
 4. Vào Project configuration > Build & deploy > Repository và liên kết kho GitHub vừa tạo.
 5. Trong Netlify, thêm hai biến môi trường:
-   CMS_REPO = kimmyenn2005-sudo/hv-mobile-website
-   SITE_URL = https://hvmobile.netlify.app
+   CMS_REPO = kimmyenn2005-sudo/iphonequangngai
+   SITE_URL = https://iphonequangngai.hvmobile43-vn.workers.dev
 6. Bấm Deploy site. Netlify tự nhận:
    Build command: node scripts/build.mjs
    Publish directory: dist
@@ -20,7 +20,7 @@ PHẦN 2 – BẬT ĐĂNG NHẬP GITHUB CHO TRANG QUẢN TRỊ
 1. Mở GitHub > Settings > Developer settings > OAuth Apps > New OAuth App.
 2. Điền:
    Application name: HV Mobile CMS
-   Homepage URL: https://hvmobile.netlify.app
+   Homepage URL: https://iphonequangngai.hvmobile43-vn.workers.dev
    Authorization callback URL: https://api.netlify.com/auth/done
 3. Tạo ứng dụng, sao chép Client ID và tạo Client Secret.
 4. Mở Netlify > dự án hvmobile > Project configuration > Access & security > OAuth.
@@ -29,7 +29,7 @@ PHẦN 2 – BẬT ĐĂNG NHẬP GITHUB CHO TRANG QUẢN TRỊ
 
 PHẦN 3 – ĐĂNG BÀI HẰNG NGÀY
 
-1. Truy cập: https://hvmobile.netlify.app/admin/
+1. Truy cập: https://iphonequangngai.hvmobile43-vn.workers.dev/admin/
 2. Chọn Login with GitHub.
 3. Chọn Bài viết SEO > Bài viết mới.
 4. Nhập tiêu đề, mô tả Google, ngày đăng, ảnh, chuyên mục và nội dung.
@@ -38,11 +38,11 @@ PHẦN 3 – ĐĂNG BÀI HẰNG NGÀY
 7. Hệ thống tự lưu bài lên GitHub, Netlify tự deploy và sitemap tự cập nhật.
 
 Đường dẫn bài sau khi đăng:
-https://hvmobile.netlify.app/bai-viet/ten-bai-viet/
+https://iphonequangngai.hvmobile43-vn.workers.dev/bai-viet/ten-bai-viet/
 
 PHẦN 4 – CẬP NHẬT BẢNG GIÁ
 
-1. Truy cập: https://hvmobile.netlify.app/admin/
+1. Truy cập: https://iphonequangngai.hvmobile43-vn.workers.dev/admin/
 2. Chọn Quản trị bảng giá.
 3. Chọn đúng nhóm cần sửa: Giá bán iPhone, Giá thu cũ, Giá phụ kiện hoặc Giá sửa chữa.
 4. Mở dòng sản phẩm, sửa giá và cập nhật Ngày cập nhật.

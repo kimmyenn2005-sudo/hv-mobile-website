@@ -4,15 +4,15 @@ DEPLOY:
 1. Giải nén file ZIP.
 2. Mở thư mục HV-MOBILE-SEO-FAST.
 3. Kéo CẢ THƯ MỤC HV-MOBILE-SEO-FAST vào đúng project hvmobile trên Netlify.
-4. Link vẫn giữ nguyên: https://hvmobile.netlify.app/
+4. Link vẫn giữ nguyên: https://iphonequangngai.hvmobile43-vn.workers.dev/
 
 SAU DEPLOY KIỂM TRA:
-- https://hvmobile.netlify.app/
-- https://hvmobile.netlify.app/google1e0b702130489067.html
-- https://hvmobile.netlify.app/sitemap.xml
+- https://iphonequangngai.hvmobile43-vn.workers.dev/
+- https://iphonequangngai.hvmobile43-vn.workers.dev/google1e0b702130489067.html
+- https://iphonequangngai.hvmobile43-vn.workers.dev/sitemap.xml
 
 SEARCH CONSOLE:
-- Kiểm tra URL: https://hvmobile.netlify.app/
+- Kiểm tra URL: https://iphonequangngai.hvmobile43-vn.workers.dev/
 - Chọn KIỂM TRA URL ĐANG HOẠT ĐỘNG
 - Sau đó YÊU CẦU LẬP CHỈ MỤC
 - Vào Sơ đồ trang web và gửi: sitemap.xml

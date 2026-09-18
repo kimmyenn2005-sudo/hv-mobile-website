@@ -31,6 +31,16 @@ for (const page of pages) {
   }
   if (/Mộ Đức|Đức Phổ/i.test(html)) throw new Error(`${page}: còn địa chỉ Quảng Ngãi cũ/sai.`);
 }
+// Khong duoc con dia chi Netlify cu trong ban xuat ban.
+for (const page of pages) {
+  const html = await readFile(join(out, page), "utf8");
+  if (html.includes("hvmobile.netlify.app")) throw new Error(`${page}: còn trỏ về tên miền Netlify cũ.`);
+}
+const robots = await readFile(join(out, "robots.txt"), "utf8");
+if (robots.includes("hvmobile.netlify.app")) throw new Error("robots.txt còn trỏ sitemap về Netlify cũ.");
+const sitemapXml = await readFile(join(out, "sitemap.xml"), "utf8");
+if (sitemapXml.includes("hvmobile.netlify.app")) throw new Error("sitemap.xml còn trỏ về Netlify cũ.");
+
 const mapCheck = await readFile(join(out, "map-check.txt"), "utf8");
 if (!mapCheck.includes(QUANG_NGAI_PLACE_ID)) throw new Error("map-check.txt chưa ghi đúng Place ID.");
 

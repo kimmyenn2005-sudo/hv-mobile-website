@@ -7,8 +7,8 @@ import { syncQuangNgaiStore, QUANG_NGAI_ADDRESS, QUANG_NGAI_LAT, QUANG_NGAI_LNG,
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "dist");
 const POSTS = join(ROOT, "content", "posts");
-const SITE_URL = String(process.env.SITE_URL || "https://hvmobile.netlify.app").replace(/\/+$/, "");
-const CMS_REPO = String(process.env.CMS_REPO || "kimmyenn2005-sudo/hv-mobile-website").trim();
+const SITE_URL = String(process.env.SITE_URL || "https://iphonequangngai.hvmobile43-vn.workers.dev").replace(/\/+$/, "");
+const CMS_REPO = String(process.env.CMS_REPO || "kimmyenn2005-sudo/iphonequangngai").trim();
 
 if (OUT !== join(ROOT, "dist")) throw new Error("Đường dẫn thư mục xuất bản không hợp lệ.");
 await rm(OUT, { recursive: true, force: true });
@@ -282,6 +282,21 @@ await writeFile(join(ROOT, "admin", "config.yml"), adminConfig, "utf8");
 const feedItems = posts.slice(0, 20).map(post => `<item><title>${post.title.replaceAll("&", "&amp;").replaceAll("<", "&lt;")}</title><link>${SITE_URL}/bai-viet/${post.slug}/</link><guid>${SITE_URL}/bai-viet/${post.slug}/</guid><pubDate>${new Date(`${post.date}T00:00:00+07:00`).toUTCString()}</pubDate><description>${post.description.replaceAll("&", "&amp;").replaceAll("<", "&lt;")}</description></item>`).join("");
 await writeFile(join(OUT, "feed.xml"), `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>HV Mobile</title><link>${SITE_URL}/bai-viet/</link><description>Bài viết mới từ HV Mobile</description>${feedItems}</channel></rss>`, "utf8");
 
+// ==== ĐỔI MỌI ĐỊA CHỈ CŨ hvmobile.netlify.app SANG TÊN MIỀN ĐANG CHẠY ====
+// Thẻ canonical / og:url / schema còn trỏ về Netlify sẽ khiến Google hiểu
+// website chính nằm ở Netlify và không xếp hạng cho tên miền hiện tại.
+const OLD_SITE = "https://hvmobile.netlify.app";
+const textFiles = (await readdir(OUT, { recursive: true }))
+  .filter(name => /\.(html|xml|txt|json|yml)$/i.test(name));
+let domainFixed = 0;
+for (const name of textFiles) {
+  const target = join(OUT, name);
+  const content = await readFile(target, "utf8");
+  if (!content.includes(OLD_SITE)) continue;
+  await writeFile(target, content.replaceAll(OLD_SITE, SITE_URL), "utf8");
+  domainFixed += 1;
+}
+
 // ==== QUÉT CUỐI: ép toạ độ Quảng Ngãi lên TẤT CẢ trang HTML đã xuất bản ====
 const allBuiltPages = (await readdir(OUT, { recursive: true })).filter(name => name.endsWith(".html"));
 let syncedPages = 0;
@@ -311,5 +326,6 @@ await cp(join(OUT, "bai-viet"), join(ROOT, "bai-viet"), { recursive: true, force
 
 
 console.log(`Đã tạo website: ${posts.length} bài đang hiển thị, ${allPosts.length - posts.length} bài nháp.`);
+console.log(`Đã đổi tên miền cũ sang ${SITE_URL} trong ${domainFixed} tệp.`);
 console.log(`Đã khoá ghim bản đồ Quảng Ngãi (Place ID ${QUANG_NGAI_PLACE_ID}) trên ${allBuiltPages.length} trang HTML (sửa thêm ${syncedPages} trang).`);
 if (CMS_REPO.startsWith("CHUA-CAU-HINH/")) console.warn("Chưa đặt CMS_REPO. Trang công khai vẫn hoạt động nhưng /admin/ chưa thể đăng nhập.");

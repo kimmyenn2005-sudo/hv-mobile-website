@@ -1,0 +1,46 @@
+==========================================================
+THEM SAN PHAM IPHONE MOI VAO BANG GIA (khong can code)
+==========================================================
+
+VAO TRANG QUAN TRI
+    https://<ten-mien>/admin/
+    Dang nhap GitHub -> menu trai chon "Quan tri bang gia"
+    -> chon "Bang gia iPhone".
+
+THEM MAY MOI
+    Tim muc "Cac dong iPhone" -> bam nut
+    "Add San pham iPhone moi" (nut nam o dau danh sach).
+    May moi se duoc them len DAU danh sach.
+
+CAC O CAN DIEN
+    BAT BUOC
+      - Ten may            : vi du  iPhone 18 Pro Max
+      - Dung luong va gia  : bam Add de them tung dong
+                             (Dung luong / Gia 95% / Gia 99% / Gia Like New)
+                             Chua co gia thi nhap dau gach:  -
+
+    NEN DIEN (hien o muc "Xem chi tiet" giong cac may co san)
+      - Anh chinh / Thu vien anh san pham
+      - Nam ra mat, Man hinh, Chip xu ly, Camera
+      - Chat lieu hoan thien, Cong ket noi / sac, Khang nuoc / bui
+      - Diem noi bat
+      - Mau sac (Ten mau + Ma mau dang #xxxxxx)
+
+    CO THE BO TRONG
+      - Ma duong dan, Tu khoa tim kiem  -> website tu tao tu ten may.
+      - Ghi chu san pham                -> vi du "hang dep, ban VN/A".
+
+    CONG TAC
+      - Hien thi tren website : tat de an han san pham.
+      - Con hang              : tat thi may van hien nhung co nhan
+                                "TAM HET HANG".
+
+LUU LAI
+    Sua xong bam "Publish" (hoac "Save" roi "Publish").
+    Nho sua luon o "Ngay cap nhat" de khach thay bang gia moi.
+    Cloudflare tu build lai, khoang vai phut sau web se co may moi.
+
+LUU Y
+    - Neu khong upload anh, may moi tam dung logo HV Mobile lam anh dai dien.
+      Chi can them anh vao muc "Thu vien anh san pham" la hien dung anh may.
+    - Giao dien, bo cuc va cac may co san KHONG bi thay doi.

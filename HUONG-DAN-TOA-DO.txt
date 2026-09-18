@@ -1,36 +1,34 @@
-================================================================
-GHIM BAN DO CHI NHANH HV MOBILE QUANG NGAI - CACH DOI VA KIEM TRA
-================================================================
+=====================================================
+GHIM BAN DO CHI NHANH HV MOBILE QUANG NGAI
+=====================================================
 
-DIA CHI CHUAN (hien dang dung tren toan bo website):
-    43 Le Thanh Ton, phuong Cam Thanh, Quang Ngai
-    Toa do: 15.113954, 108.810143
+Link ban do tren toan bo website hien dung DIA DIEM DA GHIM
+tren Google Maps cua cua hang, KHONG dung so toa do:
 
-TAI SAO TRUOC DAY GOOGLE NHAY SANG DUC PHO?
-    Link cu tim theo CHU ("43 Le Thanh Ton..."). Google tu doan
-    va co the tra ve chi nhanh/dia diem khac trong tinh.
-    Bay gio tat ca link deu la dang GHIM TOA DO:
-        https://www.google.com/maps/place/15.113954,108.810143/@15.113954,108.810143,19z
-    Google mo dung diem nay, KHONG tim kiem lai -> khong the nhay di dau khac.
+    Ten hien thi : HV Mobile Quang Ngai
+    Dia chi      : 43 Le Thanh Ton, phuong Cam Thanh, Quang Ngai
+    Place ID     : ChIJkTCz6WBTaDERt37BTiZZTbM
 
-DOI GHIM KHI CAN (neu ghim lech vai chuc met):
-    1. Mo Google Maps -> bam giu dung cua hang -> copy 2 so toa do.
-    2. Mo tep  scripts/toa-do.mjs
-    3. Sua 2 dong:
-           export const QUANG_NGAI_LAT = "15.113954";
-           export const QUANG_NGAI_LNG = "108.810143";
+Khi khach bam "MO GOOGLE MAPS" se mo thang the dia diem
+HV Mobile Quang Ngai (co ten cua hang, anh, danh gia, gio mo cua),
+khong hien so toa do va khong the nhay sang Duc Pho.
+
+DOI SANG DIA DIEM KHAC (neu can):
+    1. Mo Google Maps, tim dung dia diem cua hang.
+    2. Lay Place ID cua dia diem do.
+    3. Mo tep  scripts/toa-do.mjs  va sua dong:
+           export const QUANG_NGAI_PLACE_ID = "ChIJ...";
     4. Chay:  npm run build  roi  npm run check
-    -> Toan bo footer, nut CHI DUONG va schema tren MOI trang tu cap nhat.
-    KHONG can sua tay tung trang nua.
+    -> Footer, nut CHI DUONG va schema tren MOI trang tu cap nhat.
 
-KIEM TRA SAU KHI DEPLOY (quan trong):
-    Mo:  https://<ten-mien-cua-ban>/map-check.txt
-    - Neu "Ban build luc" la thoi diem moi  -> may chu da chay ban moi.
-    - Neu khong mo duoc hoac ngay cu       -> ban moi CHUA len,
-      can deploy lai (hoac Clear cache and deploy site tren Netlify),
-      roi tren dien thoai xoa cache trinh duyet / mo tab an de thu lai.
+KIEM TRA SAU KHI DEPLOY:
+    1) Mo  https://<ten-mien>/map-check.txt
+       Dong "Ban build luc" phai la gio vua deploy.
+    2) Mo  https://<ten-mien>/iphone/  -> keo xuong footer
+       -> giu vao nut MO GOOGLE MAPS -> copy link.
+       Link dung phai chua: query_place_id=ChIJkTCz6WBTaDERt37BTiZZTbM
+    3) Thu tren dien thoai bang TAB AN DANH.
 
-BO KIEM TRA TU DONG:
-    `npm run check` se BAO LOI va chan deploy neu bat ky trang nao
-    con link ban do tim theo chu, con place_id cu, hoac con chu
-    "Duc Pho" / "Mo Duc".
+BO KIEM TRA TU DONG (`npm run check`):
+    Se BAO LOI va chan deploy neu bat ky trang nao con link ban do
+    tim theo chu, con link dang toa do, hoac con chu "Duc Pho"/"Mo Duc".

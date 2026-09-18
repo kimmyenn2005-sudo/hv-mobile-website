@@ -1,0 +1,50 @@
+=====================================================
+DEPLOY LEN CLOUDFLARE PAGES (ket noi GitHub)
+=====================================================
+
+B1. DAY MA NGUON LEN GITHUB
+    Thay TOAN BO file trong repo bang goi nay (ghi de het).
+    Dac biet phai co:  scripts/  index.html  iphone/  phu-kien/
+    tra-gop/  thu-cu/  bao-hanh/  sua-chua/  lien-he/  gioi-thieu/
+    _headers  _redirects  package.json
+
+B2. KIEM TRA CAI DAT BUILD TRONG CLOUDFLARE PAGES
+    Workers & Pages -> chon project -> Settings -> Build
+
+        Framework preset        : None
+        Build command           : npm run build
+        Build output directory  : dist
+        Root directory          : (de trong)
+
+    Settings -> Environment variables -> them:
+        NODE_VERSION = 22
+
+    >>> Neu "Build output directory" dang de trong hoac la "/",
+        Cloudflare se phat ban cu trong repo chu khong phat ban
+        vua build. Day la loi hay gap nhat.
+
+B3. XEM LOG BUILD
+    Deployments -> ban moi nhat -> xem log.
+    Phai thay 2 dong nay thi moi dung:
+        Da tao website: ...
+        Da khoa ghim ban do Quang Ngai (15.113954, 108.810143) tren 13 trang HTML
+    Neu build FAILED thi Cloudflare van giu ban cu dang chay -> web khong doi.
+
+B4. XOA CACHE (bat buoc neu dung ten mien rieng)
+    Cloudflare Dashboard -> chon ten mien -> Caching -> Configuration
+    -> Purge Everything.
+    (Neu chi dung dia chi *.pages.dev thi khong can buoc nay.)
+
+B5. KIEM TRA
+    1) Mo  https://<ten-mien>/map-check.txt
+       Dong "Ban build luc" phai la gio vua deploy.
+    2) Mo  https://<ten-mien>/iphone/  -> keo xuong footer
+       -> giu vao nut MO GOOGLE MAPS -> copy link.
+       Link dung phai chua: 15.113954,108.810143
+    3) Thu tren dien thoai bang TAB AN DANH.
+
+GHI CHU
+    - netlify.toml KHONG co tac dung tren Cloudflare.
+      Phan header/cache da chuyen sang tep  _headers.
+    - Muon doi ghim ban do: sua 2 so trong  scripts/toa-do.mjs
+      roi push lai. Xem HUONG-DAN-TOA-DO.txt

@@ -1,0 +1,11 @@
+# Cloudflare Pages: khong cho trinh duyet/CDN giu ban HTML cu.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Tep kiem tra phien ban - luon lay moi.
+/map-check.txt
+  Cache-Control: no-store
+
+# Anh/CSS/JS co the cache lau vi ten tep khong doi noi dung.
+/assets/*
+  Cache-Control: public, max-age=604800

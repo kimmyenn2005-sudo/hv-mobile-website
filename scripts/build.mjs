@@ -2,6 +2,7 @@ import { cp, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import { dirname, extname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderBlogIndex, renderPost } from "./render.mjs";
+import { syncQuangNgaiStore, QUANG_NGAI_ADDRESS, QUANG_NGAI_LAT, QUANG_NGAI_LNG, QUANG_NGAI_MAP_URL, QUANG_NGAI_DIRECTIONS_URL, QUANG_NGAI_PLACE_ID, QUANG_NGAI_PLACE_NAME } from "./toa-do.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "dist");
@@ -15,7 +16,7 @@ await mkdir(OUT, { recursive: true });
 
 const staticEntries = [
   "index.html", "iphone", "phu-kien", "bao-hanh", "tra-gop", "thu-cu", "sua-chua", "lien-he", "gioi-thieu",
-  "assets", "favicon.ico", "favicon.png", "hv-mobile-google-192.png", "google1e0b702130489067.html", "robots.txt", "_redirects",
+  "assets", "favicon.ico", "favicon.png", "hv-mobile-google-192.png", "google1e0b702130489067.html", "robots.txt", "_redirects", "_headers",
   "SEO-TU-KHOA-DA-CHEN.txt", "HUONG-DAN.txt", "admin/index.html"
 ];
 
@@ -24,6 +25,13 @@ for (const entry of staticEntries) {
   const destination = join(OUT, entry);
   await mkdir(dirname(destination), { recursive: true });
   await cp(source, destination, { recursive: true, force: true });
+}
+
+// Luôn đồng bộ chi nhánh Quảng Ngãi trên toàn bộ trang tĩnh sau mỗi lần build.
+for (const relativePath of ["index.html", "iphone/index.html", "phu-kien/index.html", "bao-hanh/index.html", "tra-gop/index.html", "thu-cu/index.html", "sua-chua/index.html", "lien-he/index.html", "gioi-thieu/index.html"]) {
+  const target = join(OUT, relativePath);
+  const html = await readFile(target, "utf8");
+  await writeFile(target, syncQuangNgaiStore(html), "utf8");
 }
 
 function replaceRequired(source, pattern, replacement, label) {
@@ -37,6 +45,16 @@ function escapeHtml(value) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+function slugifyProduct(value) {
+  return String(value || "iphone")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/đ/g, "d")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "iphone";
 }
 
 async function readJson(relativePath) {
@@ -61,15 +79,30 @@ async function rewriteOutput(relativePath, update) {
 
 const iphonePrices = await readJson("content/prices/iphone.json");
 const managedIphones = iphonePrices.models
-  .filter(phone => phone.visible !== false)
+  .filter(phone => phone && phone.visible !== false && String(phone.name || "").trim())
   .map(phone => ({
-    name: phone.name,
-    slug: phone.slug,
-    search: phone.search,
+    name: String(phone.name).trim(),
+    slug: String(phone.slug || slugifyProduct(phone.name)).trim(),
+    search: String(phone.search || phone.name || "").trim(),
+    image: String(phone.image || "").trim(),
+    images: Array.isArray(phone.images) ? phone.images.map(item => typeof item === "string" ? item : item?.image).filter(Boolean).map(String) : [],
     in_stock: phone.in_stock !== false,
     note: String(phone.note || ""),
+    year: String(phone.year || "").trim(),
+    display: String(phone.display || "").trim(),
+    chip: String(phone.chip || "").trim(),
+    camera: String(phone.camera || "").trim(),
+    body: String(phone.body || "").trim(),
+    port: String(phone.port || "").trim(),
+    protection: String(phone.protection || "").trim(),
+    highlight: String(phone.highlight || "").trim(),
     colors: Array.isArray(phone.colors) ? phone.colors : [],
-    rows: phone.rows.map(row => [row.storage, row.price_95, row.price_99, row.price_like_new])
+    rows: (Array.isArray(phone.rows) ? phone.rows : []).map(row => [
+      String(row.storage || "").trim(),
+      String(row.price_95 || "-").trim() || "-",
+      String(row.price_99 || "-").trim() || "-",
+      String(row.price_like_new || "-").trim() || "-"
+    ]).filter(row => row[0])
   }));
 await rewriteOutput("iphone/index.html", source => {
   let html = replaceRequired(
@@ -102,7 +135,7 @@ await rewriteOutput("iphone/index.html", source => {
         originalOpen(name);
         const phone=hvPhones.find(p=>p.name===name); if(!phone)return;
         const lead=document.getElementById('hvDetailLead');
-        if(lead && phone.note) lead.textContent += ' '+phone.note;
+        if(lead && phone.note && !lead.textContent.includes(phone.note)) lead.textContent += ' '+phone.note;
         const spec=HV_SPECS[name];
         if(spec && Array.isArray(phone.colors) && phone.colors.length) renderColorChoices(phone,{...spec,colors:phone.colors.map(c=>({name:c.name,hex:c.hex||'#d9d9d9'}))});
         const live=document.getElementById('hvLivePrice'); if(live && phone.in_stock===false) live.textContent='Tạm hết hàng';
@@ -249,9 +282,34 @@ await writeFile(join(ROOT, "admin", "config.yml"), adminConfig, "utf8");
 const feedItems = posts.slice(0, 20).map(post => `<item><title>${post.title.replaceAll("&", "&amp;").replaceAll("<", "&lt;")}</title><link>${SITE_URL}/bai-viet/${post.slug}/</link><guid>${SITE_URL}/bai-viet/${post.slug}/</guid><pubDate>${new Date(`${post.date}T00:00:00+07:00`).toUTCString()}</pubDate><description>${post.description.replaceAll("&", "&amp;").replaceAll("<", "&lt;")}</description></item>`).join("");
 await writeFile(join(OUT, "feed.xml"), `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>HV Mobile</title><link>${SITE_URL}/bai-viet/</link><description>Bài viết mới từ HV Mobile</description>${feedItems}</channel></rss>`, "utf8");
 
+// ==== QUÉT CUỐI: ép toạ độ Quảng Ngãi lên TẤT CẢ trang HTML đã xuất bản ====
+const allBuiltPages = (await readdir(OUT, { recursive: true })).filter(name => name.endsWith(".html"));
+let syncedPages = 0;
+for (const page of allBuiltPages) {
+  const target = join(OUT, page);
+  const html = await readFile(target, "utf8");
+  const fixed = syncQuangNgaiStore(html);
+  if (fixed !== html) { await writeFile(target, fixed, "utf8"); syncedPages += 1; }
+}
+await writeFile(join(OUT, "map-check.txt"), [
+  "HV MOBILE - KIEM TRA GHIM BAN DO CHI NHANH QUANG NGAI",
+  `Ban build luc: ${new Date().toISOString()}`,
+  `Dia chi: ${QUANG_NGAI_ADDRESS}`,
+  `Toa do: ${QUANG_NGAI_LAT}, ${QUANG_NGAI_LNG}`,
+  `Link footer moi trang: ${QUANG_NGAI_MAP_URL}`,
+  `Link chi duong: ${QUANG_NGAI_DIRECTIONS_URL}`,
+  `Place ID: ${QUANG_NGAI_PLACE_ID} (${QUANG_NGAI_PLACE_NAME})`,
+  `So trang HTML da dong bo: ${allBuiltPages.length}`,
+  "",
+  "Neu mo https://<ten-mien>/map-check.txt ma KHONG thay dong 'Ban build luc' moi nhat",
+  "thi ban dang xem ban cu tren may chu - can deploy lai va xoa cache."
+].join("\n") + "\n", "utf8");
+
 // Đồng bộ bản BÀI VIẾT đã render về thư mục gốc để người dùng có thể giải nén và mở trực tiếp bằng file://.
 await rm(join(ROOT, "bai-viet"), { recursive: true, force: true });
 await cp(join(OUT, "bai-viet"), join(ROOT, "bai-viet"), { recursive: true, force: true });
 
+
 console.log(`Đã tạo website: ${posts.length} bài đang hiển thị, ${allPosts.length - posts.length} bài nháp.`);
+console.log(`Đã khoá ghim bản đồ Quảng Ngãi (Place ID ${QUANG_NGAI_PLACE_ID}) trên ${allBuiltPages.length} trang HTML (sửa thêm ${syncedPages} trang).`);
 if (CMS_REPO.startsWith("CHUA-CAU-HINH/")) console.warn("Chưa đặt CMS_REPO. Trang công khai vẫn hoạt động nhưng /admin/ chưa thể đăng nhập.");

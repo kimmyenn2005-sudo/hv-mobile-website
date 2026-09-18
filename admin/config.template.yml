@@ -33,16 +33,38 @@ collections:
           - label: "Các dòng iPhone"
             name: "models"
             widget: "list"
+            label_singular: "Sản phẩm iPhone mới"
             summary: "{{fields.name}}"
             collapsed: true
+            allow_add: true
+            allow_remove: true
+            allow_reorder: true
+            add_to_top: true
             fields:
-              - { label: "Tên máy", name: "name", widget: "string" }
-              - { label: "Mã đường dẫn", name: "slug", widget: "string", hint: "Không đổi nếu chỉ cập nhật giá." }
-              - { label: "Từ khóa tìm kiếm", name: "search", widget: "string" }
+              - { label: "Tên máy", name: "name", widget: "string", hint: "Ví dụ: iPhone 18 Pro" }
+              - { label: "Mã đường dẫn", name: "slug", widget: "string", required: false, hint: "Có thể để trống khi thêm máy mới; website sẽ tự tạo mã từ tên máy." }
+              - { label: "Từ khóa tìm kiếm", name: "search", widget: "string", required: false, hint: "Có thể để trống; website sẽ tự dùng tên máy để tìm kiếm." }
               - { label: "Hiển thị trên website", name: "visible", widget: "boolean", default: true, hint: "Tắt để ẩn hoàn toàn sản phẩm khỏi website." }
               - { label: "Còn hàng", name: "in_stock", widget: "boolean", default: true, required: false, hint: "Tắt khi sản phẩm hết hàng; sản phẩm vẫn hiện nhưng có nhãn TẠM HẾT HÀNG." }
-              - { label: "Ghi chú sản phẩm", name: "note", widget: "text", required: false, hint: "Ví dụ: hàng đẹp, bản VN/A, màu đang về..." }
-              - label: "Màu sắc"
+              - { label: "Ghi chú sản phẩm (không bắt buộc)", name: "note", widget: "text", required: false, hint: "Ví dụ: hàng đẹp, bản VN/A, màu đang về..." }
+              - { label: "THÔNG TIN CHI TIẾT — Ảnh chính", name: "image", widget: "image", required: false, hint: "Không bắt buộc. Dùng khi chỉ muốn đăng 1 ảnh chính." }
+              - label: "THÔNG TIN CHI TIẾT — Thư viện ảnh sản phẩm"
+                name: "images"
+                widget: "list"
+                required: false
+                allow_add: true
+                allow_remove: true
+                field: { label: "Ảnh", name: "image", widget: "image" }
+                hint: "Có thể thêm nhiều ảnh cho phần Xem chi tiết. Nếu để trống, website vẫn dùng ảnh chính hoặc bộ ảnh có sẵn."
+              - { label: "THÔNG TIN CHI TIẾT — Năm ra mắt", name: "year", widget: "string", required: false, hint: "Hiện ở mục Xem chi tiết của sản phẩm. Ví dụ: 2026" }
+              - { label: "THÔNG TIN CHI TIẾT — Màn hình", name: "display", widget: "text", required: false, hint: "Hiện ở mục Xem chi tiết. Ví dụ: 6.3 inch Super Retina XDR OLED ProMotion 120Hz" }
+              - { label: "THÔNG TIN CHI TIẾT — Chip xử lý", name: "chip", widget: "string", required: false, hint: "Hiện ở mục Xem chi tiết. Ví dụ: A20 Pro" }
+              - { label: "THÔNG TIN CHI TIẾT — Camera", name: "camera", widget: "text", required: false, hint: "Hiện ở mục Xem chi tiết. Mô tả camera chính, góc rộng, tele, camera trước..." }
+              - { label: "THÔNG TIN CHI TIẾT — Chất liệu hoàn thiện", name: "body", widget: "text", required: false, hint: "Hiện ở mục Xem chi tiết. Ví dụ: khung nhôm, mặt kính Ceramic Shield..." }
+              - { label: "THÔNG TIN CHI TIẾT — Cổng kết nối / sạc", name: "port", widget: "text", required: false, hint: "Hiện ở mục Xem chi tiết. Ví dụ: USB-C • MagSafe • 5G" }
+              - { label: "THÔNG TIN CHI TIẾT — Kháng nước / bụi", name: "protection", widget: "string", required: false, hint: "Hiện ở mục Xem chi tiết. Ví dụ: IP68" }
+              - { label: "THÔNG TIN CHI TIẾT — Điểm nổi bật", name: "highlight", widget: "text", required: false, hint: "Hiện ở mục Xem chi tiết. Nhập các điểm nổi bật chính của máy." }
+              - label: "THÔNG TIN CHI TIẾT — Màu sắc"
                 name: "colors"
                 widget: "list"
                 required: false
@@ -50,7 +72,7 @@ collections:
                 fields:
                   - { label: "Tên màu", name: "name", widget: "string" }
                   - { label: "Mã màu", name: "hex", widget: "string", required: false, hint: "Ví dụ #d4af37. Có thể để trống." }
-              - label: "Dung lượng và giá"
+              - label: "THÔNG TIN CHI TIẾT — Dung lượng và giá"
                 name: "rows"
                 widget: "list"
                 summary: "{{fields.storage}} — 99%: {{fields.price_99}}"

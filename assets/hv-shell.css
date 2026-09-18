@@ -44,3 +44,9 @@ html{scroll-padding-top:0!important}
 /* HV Mobile: chỉ dùng duy nhất nút ZALO TƯ VẤN nổi do hv-shell.js quản lý. */
 .float-box,.floating,.hv-floating-contact,.hv-store-floating{display:none!important}
 .site-footer{width:100%!important;clear:both!important}
+
+/* Chan cac trang tu dat .footer-inner thanh grid (vi du trang Phu kien) lam vo bo cuc footer chung. */
+.site-footer .footer-inner{display:block!important;max-width:1240px!important;margin-left:auto!important;margin-right:auto!important;grid-template-columns:none!important}
+.site-footer .foot-grid{display:grid!important;grid-template-columns:1.35fr .8fr 1.35fr;gap:34px}
+.site-footer .foot-bottom{display:flex!important;justify-content:space-between;gap:14px;flex-wrap:wrap;padding-top:20px}
+@media(max-width:700px){.site-footer .foot-grid{grid-template-columns:1fr!important}}

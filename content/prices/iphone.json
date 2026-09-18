@@ -28,7 +28,25 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "#e7e7e4"
+        },
+        {
+          "name": "Space Gray",
+          "hex": "#4b4b4d"
+        }
+      ],
+      "year": "2017",
+      "display": "5.8 inch Super Retina HD OLED, 2436 × 1125, True Tone",
+      "chip": "A11 Bionic",
+      "camera": "Camera kép 12MP: góc rộng + tele 2x; chống rung quang học kép",
+      "body": "Khung thép không gỉ, mặt lưng kính",
+      "port": "Lightning • sạc không dây Qi",
+      "protection": "IP67",
+      "highlight": "Face ID thế hệ đầu, màn hình OLED toàn màn hình",
+      "images": []
     },
     {
       "name": "iPhone XS",
@@ -63,7 +81,29 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "#d2b59b"
+        },
+        {
+          "name": "Silver",
+          "hex": "#e8e7e2"
+        },
+        {
+          "name": "Space Gray",
+          "hex": "#4b4b4d"
+        }
+      ],
+      "year": "2018",
+      "display": "5.8 inch Super Retina HD OLED, 2436 × 1125",
+      "chip": "A12 Bionic",
+      "camera": "Camera kép 12MP góc rộng + tele 2x; Smart HDR",
+      "body": "Khung thép không gỉ, mặt lưng kính",
+      "port": "Lightning • sạc không dây Qi",
+      "protection": "IP68 (tối đa 2 m / 30 phút)",
+      "highlight": "Face ID, Dual SIM nano‑SIM + eSIM",
+      "images": []
     },
     {
       "name": "iPhone XR",
@@ -92,7 +132,41 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#202124"
+        },
+        {
+          "name": "White",
+          "hex": "#f3f3f0"
+        },
+        {
+          "name": "Blue",
+          "hex": "#73a9c2"
+        },
+        {
+          "name": "Yellow",
+          "hex": "#f2d35c"
+        },
+        {
+          "name": "Coral",
+          "hex": "#ef7f6d"
+        },
+        {
+          "name": "(PRODUCT)RED",
+          "hex": "#b51f2a"
+        }
+      ],
+      "year": "2018",
+      "display": "6.1 inch Liquid Retina HD LCD, 1792 × 828",
+      "chip": "A12 Bionic",
+      "camera": "Camera đơn 12MP góc rộng, Portrait mode, Smart HDR",
+      "body": "Khung nhôm, mặt lưng kính",
+      "port": "Lightning • sạc không dây Qi",
+      "protection": "IP67",
+      "highlight": "Face ID, nhiều màu, pin tốt trong thế hệ 2018",
+      "images": []
     },
     {
       "name": "iPhone XS Max",
@@ -127,7 +201,29 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "#d2b59b"
+        },
+        {
+          "name": "Silver",
+          "hex": "#e8e7e2"
+        },
+        {
+          "name": "Space Gray",
+          "hex": "#4b4b4d"
+        }
+      ],
+      "year": "2018",
+      "display": "6.5 inch Super Retina HD OLED, 2688 × 1242",
+      "chip": "A12 Bionic",
+      "camera": "Camera kép 12MP góc rộng + tele 2x; Smart HDR",
+      "body": "Khung thép không gỉ, mặt lưng kính",
+      "port": "Lightning • sạc không dây Qi",
+      "protection": "IP68 (tối đa 2 m / 30 phút)",
+      "highlight": "Màn hình lớn 6.5 inch, Face ID, Dual SIM",
+      "images": []
     },
     {
       "name": "iPhone 11",
@@ -156,7 +252,41 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#1e1f20"
+        },
+        {
+          "name": "Green",
+          "hex": "#b7d7b8"
+        },
+        {
+          "name": "Yellow",
+          "hex": "#f1d36c"
+        },
+        {
+          "name": "Purple",
+          "hex": "#c9b8d9"
+        },
+        {
+          "name": "(PRODUCT)RED",
+          "hex": "#b51f2a"
+        },
+        {
+          "name": "White",
+          "hex": "#efefec"
+        }
+      ],
+      "year": "2019",
+      "display": "6.1 inch Liquid Retina HD LCD, 1792 × 828",
+      "chip": "A13 Bionic",
+      "camera": "Camera kép 12MP góc rộng + siêu rộng 120°, Night mode",
+      "body": "Khung nhôm, mặt lưng kính",
+      "port": "Lightning • sạc không dây Qi",
+      "protection": "IP68 (tối đa 2 m / 30 phút)",
+      "highlight": "Night mode, Ultra Wide, camera trước 12MP",
+      "images": []
     },
     {
       "name": "iPhone 11 Pro",
@@ -191,7 +321,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "#c9ad8e"
+        },
+        {
+          "name": "Silver",
+          "hex": "#e4e2dd"
+        },
+        {
+          "name": "Space Gray",
+          "hex": "#4a4b4c"
+        },
+        {
+          "name": "Midnight Green",
+          "hex": "#4f5b52"
+        }
+      ],
+      "year": "2019",
+      "display": "5.8 inch Super Retina XDR OLED",
+      "chip": "A13 Bionic",
+      "camera": "3 camera 12MP: góc rộng + siêu rộng + tele 2x; Night mode",
+      "body": "Khung thép không gỉ, kính mờ",
+      "port": "Lightning • sạc không dây Qi",
+      "protection": "IP68 (tối đa 4 m / 30 phút)",
+      "highlight": "Màn hình XDR, hệ camera Pro 3 ống kính",
+      "images": []
     },
     {
       "name": "iPhone 11 Pro Max",
@@ -226,7 +382,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Gold",
+          "hex": "#c9ad8e"
+        },
+        {
+          "name": "Silver",
+          "hex": "#e4e2dd"
+        },
+        {
+          "name": "Space Gray",
+          "hex": "#4a4b4c"
+        },
+        {
+          "name": "Midnight Green",
+          "hex": "#4f5b52"
+        }
+      ],
+      "year": "2019",
+      "display": "6.5 inch Super Retina XDR OLED",
+      "chip": "A13 Bionic",
+      "camera": "3 camera 12MP: góc rộng + siêu rộng + tele 2x; Night mode",
+      "body": "Khung thép không gỉ, kính mờ",
+      "port": "Lightning • sạc không dây Qi",
+      "protection": "IP68 (tối đa 4 m / 30 phút)",
+      "highlight": "Màn hình 6.5 inch, pin tốt, camera Pro 3 ống kính",
+      "images": []
     },
     {
       "name": "iPhone 12",
@@ -255,7 +437,41 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#202224"
+        },
+        {
+          "name": "White",
+          "hex": "#f1f1ee"
+        },
+        {
+          "name": "(PRODUCT)RED",
+          "hex": "#b51f2a"
+        },
+        {
+          "name": "Green",
+          "hex": "#a8cbb1"
+        },
+        {
+          "name": "Blue",
+          "hex": "#315a7d"
+        },
+        {
+          "name": "Purple",
+          "hex": "#b7a6ce"
+        }
+      ],
+      "year": "2020",
+      "display": "6.1 inch Super Retina XDR OLED, 2532 × 1170",
+      "chip": "A14 Bionic",
+      "camera": "Camera kép 12MP góc rộng + siêu rộng; Night mode cả Ultra Wide",
+      "body": "Khung nhôm, Ceramic Shield mặt trước",
+      "port": "Lightning • MagSafe 15W • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "Thiết kế cạnh phẳng, OLED, 5G, MagSafe",
+      "images": []
     },
     {
       "name": "iPhone 12 Pro",
@@ -290,7 +506,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "#dddcd8"
+        },
+        {
+          "name": "Graphite",
+          "hex": "#55565a"
+        },
+        {
+          "name": "Gold",
+          "hex": "#c7a97d"
+        },
+        {
+          "name": "Pacific Blue",
+          "hex": "#5b7180"
+        }
+      ],
+      "year": "2020",
+      "display": "6.1 inch Super Retina XDR OLED",
+      "chip": "A14 Bionic",
+      "camera": "3 camera 12MP + LiDAR; tele 2x, Apple ProRAW",
+      "body": "Khung thép không gỉ, kính mờ",
+      "port": "Lightning • MagSafe 15W • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "LiDAR, ProRAW, khung thép cao cấp",
+      "images": []
     },
     {
       "name": "iPhone 12 Pro Max",
@@ -325,7 +567,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "#dddcd8"
+        },
+        {
+          "name": "Graphite",
+          "hex": "#55565a"
+        },
+        {
+          "name": "Gold",
+          "hex": "#c7a97d"
+        },
+        {
+          "name": "Pacific Blue",
+          "hex": "#5b7180"
+        }
+      ],
+      "year": "2020",
+      "display": "6.7 inch Super Retina XDR OLED",
+      "chip": "A14 Bionic",
+      "camera": "3 camera 12MP + LiDAR; tele 2.5x, chống rung sensor‑shift",
+      "body": "Khung thép không gỉ, kính mờ",
+      "port": "Lightning • MagSafe 15W • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "Màn hình 6.7 inch, sensor‑shift OIS, tele 2.5x",
+      "images": []
     },
     {
       "name": "iPhone 13",
@@ -360,7 +628,41 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Pink",
+          "hex": "#e8c4c7"
+        },
+        {
+          "name": "Blue",
+          "hex": "#6b8798"
+        },
+        {
+          "name": "Midnight",
+          "hex": "#25282d"
+        },
+        {
+          "name": "Starlight",
+          "hex": "#f0e7d8"
+        },
+        {
+          "name": "(PRODUCT)RED",
+          "hex": "#b51f2a"
+        },
+        {
+          "name": "Green",
+          "hex": "#4d7563"
+        }
+      ],
+      "year": "2021",
+      "display": "6.1 inch Super Retina XDR OLED",
+      "chip": "A15 Bionic",
+      "camera": "Camera kép 12MP đặt chéo; sensor‑shift OIS; Cinematic mode",
+      "body": "Khung nhôm, Ceramic Shield",
+      "port": "Lightning • MagSafe 15W • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "A15 Bionic, camera chéo, Cinematic mode",
+      "images": []
     },
     {
       "name": "iPhone 13 Pro",
@@ -401,7 +703,37 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Graphite",
+          "hex": "#55565a"
+        },
+        {
+          "name": "Gold",
+          "hex": "#c7a97d"
+        },
+        {
+          "name": "Silver",
+          "hex": "#e4e2dd"
+        },
+        {
+          "name": "Sierra Blue",
+          "hex": "#8fa6b7"
+        },
+        {
+          "name": "Alpine Green",
+          "hex": "#57695c"
+        }
+      ],
+      "year": "2021",
+      "display": "6.1 inch Super Retina XDR OLED ProMotion 120Hz",
+      "chip": "A15 Bionic (GPU 5 lõi)",
+      "camera": "3 camera 12MP + LiDAR; tele 3x; macro; ProRAW/ProRes",
+      "body": "Khung thép không gỉ, kính mờ",
+      "port": "Lightning • MagSafe 15W • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "ProMotion 120Hz, macro, tele 3x",
+      "images": []
     },
     {
       "name": "iPhone 13 Pro Max",
@@ -442,7 +774,37 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Graphite",
+          "hex": "#55565a"
+        },
+        {
+          "name": "Gold",
+          "hex": "#c7a97d"
+        },
+        {
+          "name": "Silver",
+          "hex": "#e4e2dd"
+        },
+        {
+          "name": "Sierra Blue",
+          "hex": "#8fa6b7"
+        },
+        {
+          "name": "Alpine Green",
+          "hex": "#57695c"
+        }
+      ],
+      "year": "2021",
+      "display": "6.7 inch Super Retina XDR OLED ProMotion 120Hz",
+      "chip": "A15 Bionic (GPU 5 lõi)",
+      "camera": "3 camera 12MP + LiDAR; tele 3x; macro; ProRAW/ProRes",
+      "body": "Khung thép không gỉ, kính mờ",
+      "port": "Lightning • MagSafe 15W • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "Màn 6.7 inch 120Hz, pin tốt, camera Pro",
+      "images": []
     },
     {
       "name": "iPhone 14",
@@ -477,7 +839,41 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Midnight",
+          "hex": "#25282d"
+        },
+        {
+          "name": "Purple",
+          "hex": "#b7add1"
+        },
+        {
+          "name": "Starlight",
+          "hex": "#f0e7d8"
+        },
+        {
+          "name": "(PRODUCT)RED",
+          "hex": "#b51f2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "#9fb9ca"
+        },
+        {
+          "name": "Yellow",
+          "hex": "#f0d76a"
+        }
+      ],
+      "year": "2022",
+      "display": "6.1 inch Super Retina XDR OLED",
+      "chip": "A15 Bionic (GPU 5 lõi)",
+      "camera": "Camera kép 12MP; Photonic Engine; Cinematic 4K; Action mode",
+      "body": "Khung nhôm, Ceramic Shield",
+      "port": "Lightning • MagSafe • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "Crash Detection, Emergency SOS vệ tinh ở thị trường hỗ trợ",
+      "images": []
     },
     {
       "name": "iPhone 14 Plus",
@@ -512,7 +908,41 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Midnight",
+          "hex": "#25282d"
+        },
+        {
+          "name": "Purple",
+          "hex": "#b7add1"
+        },
+        {
+          "name": "Starlight",
+          "hex": "#f0e7d8"
+        },
+        {
+          "name": "(PRODUCT)RED",
+          "hex": "#b51f2a"
+        },
+        {
+          "name": "Blue",
+          "hex": "#9fb9ca"
+        },
+        {
+          "name": "Yellow",
+          "hex": "#f0d76a"
+        }
+      ],
+      "year": "2022",
+      "display": "6.7 inch Super Retina XDR OLED",
+      "chip": "A15 Bionic (GPU 5 lõi)",
+      "camera": "Camera kép 12MP; Photonic Engine; Cinematic 4K; Action mode",
+      "body": "Khung nhôm, Ceramic Shield",
+      "port": "Lightning • MagSafe • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "Màn hình lớn 6.7 inch và thời lượng pin tốt",
+      "images": []
     },
     {
       "name": "iPhone 14 Pro",
@@ -553,7 +983,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Space Black",
+          "hex": "#3a3a3c"
+        },
+        {
+          "name": "Silver",
+          "hex": "#e5e4e0"
+        },
+        {
+          "name": "Gold",
+          "hex": "#c7a97d"
+        },
+        {
+          "name": "Deep Purple",
+          "hex": "#5b5264"
+        }
+      ],
+      "year": "2022",
+      "display": "6.1 inch Super Retina XDR OLED, ProMotion 120Hz, Always‑On, Dynamic Island",
+      "chip": "A16 Bionic",
+      "camera": "48MP Main + 12MP Ultra Wide + 12MP tele 3x + LiDAR",
+      "body": "Khung thép không gỉ, kính mờ",
+      "port": "Lightning • MagSafe • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "Dynamic Island, màn hình Always‑On, camera chính 48MP",
+      "images": []
     },
     {
       "name": "iPhone 14 Pro Max",
@@ -594,7 +1050,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Space Black",
+          "hex": "#3a3a3c"
+        },
+        {
+          "name": "Silver",
+          "hex": "#e5e4e0"
+        },
+        {
+          "name": "Gold",
+          "hex": "#c7a97d"
+        },
+        {
+          "name": "Deep Purple",
+          "hex": "#5b5264"
+        }
+      ],
+      "year": "2022",
+      "display": "6.7 inch Super Retina XDR OLED, ProMotion 120Hz, Always‑On, Dynamic Island",
+      "chip": "A16 Bionic",
+      "camera": "48MP Main + 12MP Ultra Wide + 12MP tele 3x + LiDAR",
+      "body": "Khung thép không gỉ, kính mờ",
+      "port": "Lightning • MagSafe • 5G",
+      "protection": "IP68 (tối đa 6 m / 30 phút)",
+      "highlight": "Dynamic Island, màn 6.7 inch, camera chính 48MP",
+      "images": []
     },
     {
       "name": "iPhone 15",
@@ -629,7 +1111,37 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#3c4042"
+        },
+        {
+          "name": "Blue",
+          "hex": "#c6d8e4"
+        },
+        {
+          "name": "Green",
+          "hex": "#c4d7c1"
+        },
+        {
+          "name": "Yellow",
+          "hex": "#e9e2a9"
+        },
+        {
+          "name": "Pink",
+          "hex": "#e7bec4"
+        }
+      ],
+      "year": "2023",
+      "display": "6.1 inch Super Retina XDR OLED, Dynamic Island",
+      "chip": "A16 Bionic",
+      "camera": "48MP Main + 12MP Ultra Wide; zoom quang học chất lượng 2x từ cảm biến chính",
+      "body": "Khung nhôm, kính màu xuyên vật liệu",
+      "port": "USB‑C (USB 2) • MagSafe • 5G",
+      "protection": "IP68",
+      "highlight": "USB‑C, Dynamic Island, camera chính 48MP",
+      "images": []
     },
     {
       "name": "iPhone 15 Plus",
@@ -664,7 +1176,37 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#3c4042"
+        },
+        {
+          "name": "Blue",
+          "hex": "#c6d8e4"
+        },
+        {
+          "name": "Green",
+          "hex": "#c4d7c1"
+        },
+        {
+          "name": "Yellow",
+          "hex": "#e9e2a9"
+        },
+        {
+          "name": "Pink",
+          "hex": "#e7bec4"
+        }
+      ],
+      "year": "2023",
+      "display": "6.7 inch Super Retina XDR OLED, Dynamic Island",
+      "chip": "A16 Bionic",
+      "camera": "48MP Main + 12MP Ultra Wide; zoom quang học chất lượng 2x",
+      "body": "Khung nhôm, kính màu xuyên vật liệu",
+      "port": "USB‑C (USB 2) • MagSafe • 5G",
+      "protection": "IP68",
+      "highlight": "Màn 6.7 inch, USB‑C, camera 48MP",
+      "images": []
     },
     {
       "name": "iPhone 15 Pro",
@@ -705,7 +1247,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black Titanium",
+          "hex": "#3e3d3b"
+        },
+        {
+          "name": "White Titanium",
+          "hex": "#e3e0da"
+        },
+        {
+          "name": "Blue Titanium",
+          "hex": "#4f6270"
+        },
+        {
+          "name": "Natural Titanium",
+          "hex": "#8c877f"
+        }
+      ],
+      "year": "2023",
+      "display": "6.1 inch Super Retina XDR OLED ProMotion 120Hz, Always‑On",
+      "chip": "A17 Pro",
+      "camera": "48MP Main + 12MP Ultra Wide + 12MP tele 3x + LiDAR",
+      "body": "Khung titanium, kính mờ",
+      "port": "USB‑C USB 3 • MagSafe • Action button",
+      "protection": "IP68",
+      "highlight": "A17 Pro, titanium, Action button, Apple Intelligence",
+      "images": []
     },
     {
       "name": "iPhone 15 Pro Max",
@@ -746,7 +1314,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black Titanium",
+          "hex": "#3e3d3b"
+        },
+        {
+          "name": "White Titanium",
+          "hex": "#e3e0da"
+        },
+        {
+          "name": "Blue Titanium",
+          "hex": "#4f6270"
+        },
+        {
+          "name": "Natural Titanium",
+          "hex": "#8c877f"
+        }
+      ],
+      "year": "2023",
+      "display": "6.7 inch Super Retina XDR OLED ProMotion 120Hz, Always‑On",
+      "chip": "A17 Pro",
+      "camera": "48MP Main + 12MP Ultra Wide + 12MP tele tetraprism 5x + LiDAR",
+      "body": "Khung titanium, kính mờ",
+      "port": "USB‑C USB 3 • MagSafe • Action button",
+      "protection": "IP68",
+      "highlight": "Tele 5x, titanium, A17 Pro, Apple Intelligence",
+      "images": []
     },
     {
       "name": "iPhone 16",
@@ -781,7 +1375,37 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#2d2f31"
+        },
+        {
+          "name": "White",
+          "hex": "#f1f1ee"
+        },
+        {
+          "name": "Pink",
+          "hex": "#d77aa9"
+        },
+        {
+          "name": "Teal",
+          "hex": "#5c8e8a"
+        },
+        {
+          "name": "Ultramarine",
+          "hex": "#4769a8"
+        }
+      ],
+      "year": "2024",
+      "display": "6.1 inch Super Retina XDR OLED, Dynamic Island",
+      "chip": "A18",
+      "camera": "48MP Fusion Main + 12MP Ultra Wide; macro; 2x optical‑quality",
+      "body": "Khung nhôm, kính màu",
+      "port": "USB‑C • MagSafe • Action button • Camera Control",
+      "protection": "IP68",
+      "highlight": "A18, Camera Control, Apple Intelligence",
+      "images": []
     },
     {
       "name": "iPhone 16 Plus",
@@ -816,7 +1440,37 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#2d2f31"
+        },
+        {
+          "name": "White",
+          "hex": "#f1f1ee"
+        },
+        {
+          "name": "Pink",
+          "hex": "#d77aa9"
+        },
+        {
+          "name": "Teal",
+          "hex": "#5c8e8a"
+        },
+        {
+          "name": "Ultramarine",
+          "hex": "#4769a8"
+        }
+      ],
+      "year": "2024",
+      "display": "6.7 inch Super Retina XDR OLED, Dynamic Island",
+      "chip": "A18",
+      "camera": "48MP Fusion Main + 12MP Ultra Wide; macro; 2x optical‑quality",
+      "body": "Khung nhôm, kính màu",
+      "port": "USB‑C • MagSafe • Action button • Camera Control",
+      "protection": "IP68",
+      "highlight": "Màn lớn 6.7 inch, A18, Camera Control, Apple Intelligence",
+      "images": []
     },
     {
       "name": "iPhone 16 Pro",
@@ -857,7 +1511,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black Titanium",
+          "hex": "#3c3b39"
+        },
+        {
+          "name": "White Titanium",
+          "hex": "#e6e3dd"
+        },
+        {
+          "name": "Natural Titanium",
+          "hex": "#8c877f"
+        },
+        {
+          "name": "Desert Titanium",
+          "hex": "#c6a487"
+        }
+      ],
+      "year": "2024",
+      "display": "6.3 inch Super Retina XDR OLED ProMotion 120Hz, Always‑On",
+      "chip": "A18 Pro",
+      "camera": "48MP Fusion Main + 48MP Ultra Wide + 12MP tele 5x + LiDAR",
+      "body": "Khung titanium",
+      "port": "USB‑C USB 3 • Action button • Camera Control • MagSafe",
+      "protection": "IP68",
+      "highlight": "A18 Pro, tele 5x, quay 4K Dolby Vision 120 fps",
+      "images": []
     },
     {
       "name": "iPhone 16 Pro Max",
@@ -898,7 +1578,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black Titanium",
+          "hex": "#3c3b39"
+        },
+        {
+          "name": "White Titanium",
+          "hex": "#e6e3dd"
+        },
+        {
+          "name": "Natural Titanium",
+          "hex": "#8c877f"
+        },
+        {
+          "name": "Desert Titanium",
+          "hex": "#c6a487"
+        }
+      ],
+      "year": "2024",
+      "display": "6.9 inch Super Retina XDR OLED ProMotion 120Hz, Always‑On",
+      "chip": "A18 Pro",
+      "camera": "48MP Fusion Main + 48MP Ultra Wide + 12MP tele 5x + LiDAR",
+      "body": "Khung titanium",
+      "port": "USB‑C USB 3 • Action button • Camera Control • MagSafe",
+      "protection": "IP68",
+      "highlight": "Màn 6.9 inch, A18 Pro, tele 5x, pin lớn",
+      "images": []
     },
     {
       "name": "iPhone 17",
@@ -933,7 +1639,37 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#222426"
+        },
+        {
+          "name": "White",
+          "hex": "#f0f0ed"
+        },
+        {
+          "name": "Mist Blue",
+          "hex": "#a9c6d6"
+        },
+        {
+          "name": "Sage",
+          "hex": "#9dae94"
+        },
+        {
+          "name": "Lavender",
+          "hex": "#c1b2cf"
+        }
+      ],
+      "year": "2025",
+      "display": "6.3 inch Super Retina XDR OLED, ProMotion 120Hz, Always‑On, tối đa 3000 nit ngoài trời",
+      "chip": "A19",
+      "camera": "48MP Dual Fusion: Main 48MP + Ultra Wide 48MP; 2x optical‑quality; camera trước 18MP Center Stage",
+      "body": "Khung nhôm, Ceramic Shield 2",
+      "port": "USB‑C • MagSafe • Action button • Camera Control",
+      "protection": "IP68",
+      "highlight": "ProMotion 120Hz trên bản thường, A19, Apple Intelligence",
+      "images": []
     },
     {
       "name": "iPhone 17 Air",
@@ -974,7 +1710,33 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Space Black",
+          "hex": "#27282a"
+        },
+        {
+          "name": "Cloud White",
+          "hex": "#efefec"
+        },
+        {
+          "name": "Light Gold",
+          "hex": "#ddcfad"
+        },
+        {
+          "name": "Sky Blue",
+          "hex": "#aec9dc"
+        }
+      ],
+      "year": "2025",
+      "display": "6.5 inch Super Retina XDR OLED, ProMotion 120Hz, Always‑On, tối đa 3000 nit ngoài trời",
+      "chip": "A19 Pro (GPU 5 lõi)",
+      "camera": "48MP Fusion Main; 2x optical‑quality; camera trước 18MP Center Stage",
+      "body": "Thiết kế titanium mỏng 5.64 mm",
+      "port": "USB‑C • MagSafe 20W • Camera Control",
+      "protection": "IP68",
+      "highlight": "Thiết kế siêu mỏng, nặng khoảng 165 g, Apple Intelligence",
+      "images": []
     },
     {
       "name": "iPhone 17 Pro",
@@ -1015,7 +1777,29 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "#dadbd9"
+        },
+        {
+          "name": "Cosmic Orange",
+          "hex": "#d77a3a"
+        },
+        {
+          "name": "Deep Blue",
+          "hex": "#263b58"
+        }
+      ],
+      "year": "2025",
+      "display": "6.3 inch Super Retina XDR OLED ProMotion 120Hz, Always‑On, tối đa 3000 nit",
+      "chip": "A19 Pro",
+      "camera": "48MP Pro Fusion: Main + Ultra Wide + Tele 4x; hỗ trợ 8x optical‑quality; camera trước 18MP Center Stage",
+      "body": "Nhôm nguyên khối, Ceramic Shield 2 trước và Ceramic Shield sau",
+      "port": "USB‑C USB 3 • MagSafe 25W • Camera Control",
+      "protection": "IP68",
+      "highlight": "A19 Pro, 3 camera 48MP, zoom optical‑quality tới 8x",
+      "images": []
     },
     {
       "name": "iPhone 17 Pro Max",
@@ -1062,7 +1846,29 @@
       ],
       "in_stock": true,
       "note": "",
-      "colors": []
+      "colors": [
+        {
+          "name": "Silver",
+          "hex": "#dadbd9"
+        },
+        {
+          "name": "Cosmic Orange",
+          "hex": "#d77a3a"
+        },
+        {
+          "name": "Deep Blue",
+          "hex": "#263b58"
+        }
+      ],
+      "year": "2025",
+      "display": "6.9 inch Super Retina XDR OLED ProMotion 120Hz, Always‑On, tối đa 3000 nit",
+      "chip": "A19 Pro",
+      "camera": "48MP Pro Fusion: Main + Ultra Wide + Tele 4x; hỗ trợ 8x optical‑quality; camera trước 18MP Center Stage",
+      "body": "Nhôm nguyên khối, Ceramic Shield 2 trước và Ceramic Shield sau",
+      "port": "USB‑C USB 3 • MagSafe 25W • Camera Control",
+      "protection": "IP68",
+      "highlight": "Màn 6.9 inch, A19 Pro, zoom optical‑quality tới 8x, pin lớn",
+      "images": []
     }
   ]
 }

@@ -59,20 +59,23 @@
 
 
   // ================================================================
-  //  LUOI AN TOAN: ep lien ket ban do chi nhanh Quang Ngai ve dung ghim.
+  //  LUOI AN TOAN: ep lien ket ban do chi nhanh Quang Ngai ve dung
+  //  dia diem da ghim tren Google Maps (HV Mobile Quang Ngai).
   //  Neu may chu con phat mot trang HTML cu (link tim theo chu ->
-  //  Google nhay sang Duc Pho), doan nay se sua ngay khi trang tai xong.
+  //  Google nhay sang Duc Pho), doan nay sua ngay khi trang tai xong.
   //  Khi trang da dung san thi doan nay khong lam gi ca.
   // ================================================================
   (() => {
-    const QN_MAP = 'https://www.google.com/maps/place/15.113954,108.810143/@15.113954,108.810143,19z';
-    const QN_DIR = 'https://www.google.com/maps/dir/?api=1&destination=15.113954%2C108.810143&travelmode=driving';
+    const PLACE_ID = 'ChIJkTCz6WBTaDERt37BTiZZTbM';
+    const NAME_Q = 'HV+Mobile+Qu%E1%BA%A3ng+Ng%C3%A3i';
+    const QN_MAP = 'https://www.google.com/maps/search/?api=1&query=' + NAME_Q + '&query_place_id=' + PLACE_ID;
+    const QN_DIR = 'https://www.google.com/maps/dir/?api=1&destination=' + NAME_Q + '&destination_place_id=' + PLACE_ID;
     const isDaNang = value => /Tr%E1%BA%A7n\+Cao|Tran\+Cao|Trần\+Cao|Da\+Nang|%C4%90%C3%A0\+N%E1%BA%B5ng|649/i.test(value);
 
     document.querySelectorAll('a[href*="google.com/maps"]').forEach(link => {
       const href = link.getAttribute('href') || '';
       if (isDaNang(href)) return;
-      if (href.includes('15.113954,108.810143') || href.includes('15.113954%2C108.810143')) return;
+      if (href.includes(PLACE_ID)) return;
       link.href = /\/maps\/dir\//.test(href) ? QN_DIR : QN_MAP;
     });
 
@@ -84,6 +87,31 @@
       );
     });
   })();
+
+  // ================================================================
+  //  SUA BO CUC FOOTER CHO MOI TRANG.
+  //  Mot so trang (vi du Phu kien) tu dat .footer-inner thanh luoi
+  //  3 cot, khien khoi footer bi ep vao 1/3 chieu ngang va dong ban
+  //  quyen bi day sang ben phai. Doan nay tra footer ve dung bo cuc
+  //  chung. Trang nao dang dung san thi khong bi anh huong.
+  // ================================================================
+  if (!document.getElementById('hv-footer-layout-fix')) {
+    const footStyle = document.createElement('style');
+    footStyle.id = 'hv-footer-layout-fix';
+    footStyle.textContent = `
+      .site-footer .footer-inner{display:block!important;max-width:1240px!important;
+        margin-left:auto!important;margin-right:auto!important;grid-template-columns:none!important}
+      .site-footer .foot-grid{display:grid!important;grid-template-columns:1.35fr .8fr 1.35fr!important;
+        gap:34px!important;padding-bottom:34px!important;
+        border-bottom:1px solid rgba(255,255,255,.1)!important}
+      .site-footer .foot-bottom{display:flex!important;justify-content:space-between!important;
+        gap:14px!important;flex-wrap:wrap!important;padding-top:20px!important;
+        font-size:12px!important;color:#8d877c!important}
+      .site-footer .branch{padding:12px 0!important}
+      @media(max-width:700px){.site-footer .foot-grid{grid-template-columns:1fr!important}}
+    `;
+    document.head.append(footStyle);
+  }
 
   const button = document.getElementById('menuBtn');
   const menu = document.getElementById('mobileMenu');

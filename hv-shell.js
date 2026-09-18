@@ -1,26 +1,4 @@
 (() => {
-  // Khóa Google Maps Quảng Ngãi bằng Place ID chính xác để không thể nhảy sang Đức Phổ.
-  const HV_QN_PLACE_ID = 'ChIJkTCz6WBTaDERt37BTiZZTbM';
-  const HV_QN_MAP_URL = `https://www.google.com/maps/search/?api=1&query=HV+Mobile+Qu%E1%BA%A3ng+Ng%C3%A3i&query_place_id=${HV_QN_PLACE_ID}`;
-  const HV_QN_DIR_URL = `https://www.google.com/maps/dir/?api=1&destination=HV+Mobile+Qu%E1%BA%A3ng+Ng%C3%A3i&destination_place_id=${HV_QN_PLACE_ID}`;
-  function hvFixQuangNgaiMaps(){
-    document.querySelectorAll('.branch').forEach(branch=>{
-      const name=branch.querySelector('strong');
-      if(name && /HV\s*Mobile\s*Quảng\s*Ngãi/i.test(name.textContent||'')){
-        const addr=branch.querySelector('span'); if(addr) addr.textContent='43 Lê Thánh Tôn, phường Cẩm Thành, Quảng Ngãi';
-        const map=branch.querySelector('a.map-btn'); if(map) map.href=HV_QN_MAP_URL;
-      }
-    });
-    document.querySelectorAll('a[href*="google.com/maps"]').forEach(link=>{
-      const box=link.closest('.branch,.store-card,.contact-card,.location-card')||link.parentElement;
-      const context=((box&&box.textContent)||'')+' '+(link.textContent||'');
-      if(/HV\s*Mobile\s*Quảng\s*Ngãi|43\s*(?:Đ\.|Đường)?\s*Lê\s*Thánh\s*Tôn/i.test(context)){
-        link.href=/\/dir\//.test(link.href)?HV_QN_DIR_URL:HV_QN_MAP_URL;
-      }
-    });
-  }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hvFixQuangNgaiMaps,{once:true}); else hvFixQuangNgaiMaps();
-
   // Xóa các nhóm nút nổi cũ ở từng trang (Gọi/FB/scroll...) để toàn website chỉ còn 1 nút Zalo tư vấn.
   document.querySelectorAll('.float-box,.floating,.hv-floating-contact,.hv-store-floating').forEach(el => el.remove());
 

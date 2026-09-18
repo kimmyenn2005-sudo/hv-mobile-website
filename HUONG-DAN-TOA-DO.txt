@@ -1,0 +1,36 @@
+================================================================
+GHIM BAN DO CHI NHANH HV MOBILE QUANG NGAI - CACH DOI VA KIEM TRA
+================================================================
+
+DIA CHI CHUAN (hien dang dung tren toan bo website):
+    43 Le Thanh Ton, phuong Cam Thanh, Quang Ngai
+    Toa do: 15.113954, 108.810143
+
+TAI SAO TRUOC DAY GOOGLE NHAY SANG DUC PHO?
+    Link cu tim theo CHU ("43 Le Thanh Ton..."). Google tu doan
+    va co the tra ve chi nhanh/dia diem khac trong tinh.
+    Bay gio tat ca link deu la dang GHIM TOA DO:
+        https://www.google.com/maps/place/15.113954,108.810143/@15.113954,108.810143,19z
+    Google mo dung diem nay, KHONG tim kiem lai -> khong the nhay di dau khac.
+
+DOI GHIM KHI CAN (neu ghim lech vai chuc met):
+    1. Mo Google Maps -> bam giu dung cua hang -> copy 2 so toa do.
+    2. Mo tep  scripts/toa-do.mjs
+    3. Sua 2 dong:
+           export const QUANG_NGAI_LAT = "15.113954";
+           export const QUANG_NGAI_LNG = "108.810143";
+    4. Chay:  npm run build  roi  npm run check
+    -> Toan bo footer, nut CHI DUONG va schema tren MOI trang tu cap nhat.
+    KHONG can sua tay tung trang nua.
+
+KIEM TRA SAU KHI DEPLOY (quan trong):
+    Mo:  https://<ten-mien-cua-ban>/map-check.txt
+    - Neu "Ban build luc" la thoi diem moi  -> may chu da chay ban moi.
+    - Neu khong mo duoc hoac ngay cu       -> ban moi CHUA len,
+      can deploy lai (hoac Clear cache and deploy site tren Netlify),
+      roi tren dien thoai xoa cache trinh duyet / mo tab an de thu lai.
+
+BO KIEM TRA TU DONG:
+    `npm run check` se BAO LOI va chan deploy neu bat ky trang nao
+    con link ban do tim theo chu, con place_id cu, hoac con chu
+    "Duc Pho" / "Mo Duc".

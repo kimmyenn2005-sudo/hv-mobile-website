@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iphonequangngai.hvmobile43-vn.workers.dev/sitemap.xml
+Sitemap: https://hvmobile.netlify.app/sitemap.xml

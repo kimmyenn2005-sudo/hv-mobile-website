@@ -32,8 +32,8 @@ Mở `http://127.0.0.1:8080`.
 
 | Tên | Ví dụ | Bắt buộc |
 | --- | --- | --- |
-| `CMS_REPO` | `kimmyenn2005-sudo/iphonequangngai` | Có, để đăng nhập và xuất bản |
-| `SITE_URL` | `https://iphonequangngai.hvmobile43-vn.workers.dev` | Nên đặt |
+| `CMS_REPO` | `kimmyenn2005-sudo/hv-mobile-website` | Có, để đăng nhập và xuất bản |
+| `SITE_URL` | `https://hvmobile.netlify.app` | Nên đặt |
 
 Chi tiết thao tác dành cho chủ website nằm trong `HUONG-DAN-DANG-BAI.txt`.
 

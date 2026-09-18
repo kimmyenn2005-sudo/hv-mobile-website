@@ -3,6 +3,10 @@ backend:
   repo: "__CMS_REPO__"
   branch: main
   use_graphql: true
+  # Dang nhap qua Worker rieng cua HV Mobile tren Cloudflare.
+  # (Truoc day dung dich vu cua Netlify, da khong con dung nua.)
+  base_url: "https://hv-cms-auth.hvmobile43-vn.workers.dev"
+  auth_endpoint: "auth"
 
 locale: vi
 site_url: "__SITE_URL__"

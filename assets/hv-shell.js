@@ -57,6 +57,34 @@
     });
   }
 
+
+  // ================================================================
+  //  LUOI AN TOAN: ep lien ket ban do chi nhanh Quang Ngai ve dung ghim.
+  //  Neu may chu con phat mot trang HTML cu (link tim theo chu ->
+  //  Google nhay sang Duc Pho), doan nay se sua ngay khi trang tai xong.
+  //  Khi trang da dung san thi doan nay khong lam gi ca.
+  // ================================================================
+  (() => {
+    const QN_MAP = 'https://www.google.com/maps/place/15.113954,108.810143/@15.113954,108.810143,19z';
+    const QN_DIR = 'https://www.google.com/maps/dir/?api=1&destination=15.113954%2C108.810143&travelmode=driving';
+    const isDaNang = value => /Tr%E1%BA%A7n\+Cao|Tran\+Cao|Trần\+Cao|Da\+Nang|%C4%90%C3%A0\+N%E1%BA%B5ng|649/i.test(value);
+
+    document.querySelectorAll('a[href*="google.com/maps"]').forEach(link => {
+      const href = link.getAttribute('href') || '';
+      if (isDaNang(href)) return;
+      if (href.includes('15.113954,108.810143') || href.includes('15.113954%2C108.810143')) return;
+      link.href = /\/maps\/dir\//.test(href) ? QN_DIR : QN_MAP;
+    });
+
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(node => {
+      if (!node.textContent.includes('Lê Thánh Tôn')) return;
+      node.textContent = node.textContent.replace(
+        /"hasMap":\s*"https:\/\/www\.google\.com\/maps\/[^"]*"/g,
+        match => (isDaNang(match) ? match : '"hasMap": "' + QN_MAP + '"')
+      );
+    });
+  })();
+
   const button = document.getElementById('menuBtn');
   const menu = document.getElementById('mobileMenu');
   if (button && menu) {
